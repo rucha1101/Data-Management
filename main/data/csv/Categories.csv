@@ -1,0 +1,51 @@
+﻿parent_category_id,category_id,category_name,description
+1000,1,Electronics,Electronics Products
+1009,2,Clothing,Fashion Wear
+1000,3,Home & Garden,Household Items
+1100,4,Smartphones,Mobile Devices
+1100,5,Laptops,Portable Computers
+1100,6,TVs,Television Sets
+1200,7,Shirts,Men's Tops
+1200,8,Dresses,Women's Dresses
+1200,9,Pants,Bottom Wear
+1300,10,Furniture,Home Furnishings
+1300,11,Kitchenware,Cooking Essentials
+1300,12,Decor,Home Decoration
+1001,13,iPhone X,Apple iPhones
+1400,14,Samsung,Samsung Phones
+1400,15,Xiaomi,Xiaomi Smartphones
+1500,16,Dell,Dell Laptops
+1500,17,HP,HP Notebooks
+1500,18,Lenovo,Lenovo ThinkPads
+1500,19,LED,LED TVs
+1600,20,OLED,OLED Televisions
+1600,21,Smart,Smart TVs
+1700,22,T-shirts,Men's T-shirts
+1009,23,Polo,Polo Shirts
+1700,24,Dress Shirts,Men's Formal Shirts
+1008,25,Summer Dress,Women's Summer Dress
+1008,26,Party Dress,Women's Party Dress
+1009,27,Maxi Dress,Women's Maxi Dress
+1009,28,Jeans,Men's Jeans
+1009,29,Leggings,Women's Leggings
+1009,30,Sweatpants,Sweatpants
+1209,31,Sofas,Living Room Sofas
+1209,32,Beds,Bedroom Beds
+1209,33,Dining Sets,Dining Furniture
+1209,34,Cookware,Cooking Pans
+1100,35,Utensils,Kitchen Utensils
+1100,36,Cutlery,Eating Utensils
+1200,37,Wall Art,Wall Paintings
+1200,38,Vases,Decorative Vases
+1200,39,Rugs,Floor Rugs
+1001,40,iPhone,iPhone 12 Series
+1001,41,iPhone ,iPhone 13 Series
+1400,42,Galaxy S21,Samsung Galaxy S21
+1400,43,Galaxy Note,Samsung Galaxy Note
+1500,44,Redmi Note,Redmi Note Series
+1500,45,Mi,Mi Series
+1500,46,Dell XPS,Dell XPS Series
+1500,47,Inspiron,Dell Inspiron Series
+1500,48,HP Pavilion,HP Pavilion Series
+1700,49,Envy,HP Envy Series
+1800,50,ThinkPad X1,Lenovo ThinkPad X1
