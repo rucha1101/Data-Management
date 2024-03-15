@@ -1,6 +1,6 @@
 -- creating table 'customers'
 create table customers (
-    customer_id VARCHAR(4) PRIMARY KEY,
+    customer_id text PRIMARY KEY,
 	cx_name text,
 	cx_email text not null,
 	gender text,
