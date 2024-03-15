@@ -1,0 +1,51 @@
+product_id,product_name,description,price,weight,color,material
+pid15345,iPhone 12 Pro Max,Apple iPhone,1099,226,Silver,Glass
+pid56082,Samsung Galaxy S21,Samsung Smartphone,999,200,Phantom Black,Plastic
+pid97581,Dell XPS 13,Dell Laptop,1299,1200,Silver,Aluminum
+pid65005,Men's Polo Shirt,Casual Men's Polo Shirt,25,300,Blue,Cotton
+pid55044,Women's Maxi Dress,Elegant Maxi Dress,50,400,Black,Polyester
+pid82265,Smart LED TV,4K Smart Television,899,25000,Black,Plastic
+pid38287,Leather Sofa,Luxury Living Room Sofa,899,15000,Brown,Leather
+pid30100,Stainless Steel Cookware Set,Kitchen Cookware Set,99,10000,Silver,Stainless Steel
+pid01492,iPhone 13 Pro,Apple iPhone,1199,228,Graphite,Glass
+pid97863,Women's Leggings,Comfortable Leggings,30,200,Grey,Spandex
+pid78374,HP Envy x360,HP Convertible Laptop,899,1500,Silver,Aluminum
+pid16700,Men's Formal Shirt,Classic Dress Shirt,35,350,White,Cotton
+pid01119,Xiaomi Redmi Note,Xiaomi Smartphone,299,210,Blue,Plastic
+pid18506,Dining Table Set,Wooden Dining Table Set,599,8000,Brown,Wood
+pid75597,Women's Party Dress,Stylish Party Dress,60,350,Red,Satin
+pid89300,OLED Smart TV,8K OLED Television,1499,28000,Black,Plastic
+pid46855,Queen Size Bed,Comfortable Bed,699,30000,Grey,Wood
+pid66210,Non-stick Cookware Set,Cooking Set,49,8000,Black,Aluminum
+pid88316,iPhone 12 Mini,Apple iPhone,699,133,Green,Glass
+pid44307,Samsung Galaxy Note,Samsung Smartphone,1099,220,Mystic Bronze,Glass
+pid23125,Lenovo ThinkPad X1,Lenovo Business Laptop,1399,1400,Black,Carbon Fiber
+pid81136,Men's T-shirt,Casual Men's T-shirt,20,250,Black,Cotton
+pid34593,Summer Dress,Floral Summer Dress,45,350,Yellow,Rayon
+pid08484,LED TV,HD LED Television,499,20000,Black,Plastic
+pid28340,Recliner Chair,Comfortable Recliner,399,10000,Beige,Fabric
+pid33527,Stainless Steel Utensil Set,Kitchen Utensil Set,29,5000,Silver,Stainless Steel
+pid25982,iPhone SE,Apple iPhone,399,148,Red,Glass
+pid18174,Samsung Galaxy Z Flip,Samsung Foldable Phone,1299,183,Mirror Black,Glass
+pid66132,Dell Inspiron 15,Dell Budget Laptop,699,1800,Black,Plastic
+pid38248,Polo Shirt,Men's Polo Shirt,30,300,White,Cotton
+pid10573,Midi Dress,Women's Midi Dress,40,300,Pink,Polyester
+pid45560,Smart TV,Full HD Smart TV,699,22000,Black,Plastic
+pid65488,Sectional Sofa,Modular Sectional Sofa,1499,18000,Grey,Fabric
+pid02604,Cast Iron Cookware Set,Durable Cookware Set,79,12000,Black,Cast Iron
+pid35616,iPhone 11 Pro Max,Apple iPhone,1099,226,Midnight Green,Glass
+pid55834,Samsung Galaxy Z Fold,Samsung Foldable Phone,1799,276,Mystic Bronze,Glass
+pid55158,HP Pavilion Laptop,HP Performance Laptop,799,1700,Silver,Plastic
+pid92416,V-neck T-shirt,Men's V-neck T-shirt,22,250,Navy,Cotton
+pid20114,Wrap Dress,Women's Wrap Dress,35,320,Blue,Viscose
+pid07178,4K TV,4K Ultra HD Television,799,24000,Black,Plastic
+pid07147,Futon Sofa Bed,Sofa Bed with Futon,399,16000,Grey,Fabric
+pid27690,Kitchen Knife Set,Stainless Steel Knives,49,2000,Silver,Stainless Steel
+pid87323,iPhone XR,Apple iPhone,599,194,Coral,Glass
+pid17567,Samsung Galaxy S10,Samsung Smartphone,899,157,Prism Blue,Glass
+pid98976,MacBook Air,Apple Laptop,999,1200,Space Grey,Aluminum
+pid65473,Button-down Shirt,Men's Button-down Shirt,30,350,Plaid,Cotton
+pid70547,Midi Skirt,Women's Midi Skirt,35,280,Black,Rayon
+pid62235,Curved TV,Curved LED Television,1199,30000,Silver,Plastic
+pid39202,Velvet Sofa,Plush Velvet Sofa,1199,20000,Blue,Velvet
+pid76379,Wrap Dress,Women's Wrap Dress,20,320,Red,Viscose
