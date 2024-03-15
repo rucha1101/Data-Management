@@ -2,7 +2,7 @@ library(readr)
 library(RSQLite)
 
 # Load the datasets
-customer <- readr::read_csv("dataset/customer_v2.csv")
+customer <- readr::read_csv("dataset/Customers.csv")
 
 # Connect to the database
 my_connection <- RSQLite::dbConnect(RSQLite::SQLite(), "database/group_33.db")
