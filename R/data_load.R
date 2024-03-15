@@ -1,8 +1,6 @@
 library(readr)
 library(RSQLite)
 library(dplyr)
-library(readxl)
-library(openxlsx)
 
 
 
