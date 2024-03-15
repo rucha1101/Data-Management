@@ -9,7 +9,7 @@ library(dplyr)
 library(readxl)
 library(openxlsx)
 
-data <- readr::read_csv("/cloud/project/main/data/csv/Categories.csv")
+data <- readr::read_csv("main/data/csv/Categories.csv")
 
 my_connection <- RSQLite::dbConnect(RSQLite::SQLite(),"database.db")
 
