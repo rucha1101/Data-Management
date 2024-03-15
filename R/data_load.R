@@ -1,15 +1,33 @@
 library(readr)
 library(RSQLite)
+library(dplyr)
+library(readxl)
+library(openxlsx)
 
-# Load the datasets
-customer <- readr::read_csv("data_upload/Customers.csv")
 
-# Connect to the database
-my_connection <- RSQLite::dbConnect(RSQLite::SQLite(), "database.db")
 
-# Append each data frame to its respective table in the database
-# Adjust the table names as needed
-RSQLite::dbWriteTable(my_connection, "customer", customer, append = TRUE)
+my_connection <- RSQLite::dbConnect(RSQLite::SQLite(),"database.db")
 
-# Close the database connection
-RSQLite::dbDisconnect(my_connection)
+
+# Physical Schema
+tables <- RSQLite::dbListTables(my_connection)
+
+# drop all tables
+for (table in tables) {
+  query <- paste("DROP TABLE IF EXISTS", table)
+  RSQLite::dbExecute(my_connection, query)
+}
+
+RSQLite::dbExecute(my_connection,"
+  CREATE TABLE 'Customers' (
+    'customer_id' VARCHAR(4) PRIMARY KEY,
+	'cx_name' text,
+	'cx_email' text not null,
+	'gender' text,
+	'cx_address' text not null,
+	'sign_up_date' date,
+	'last_login_date' timestamp,
+	'date_of_birth' date,
+	'cx_phone_number' text not null   
+    );
+")
