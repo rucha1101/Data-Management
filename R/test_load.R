@@ -1,6 +1,6 @@
 
 
-
+library(readr)
 
 my_connection <- RSQLite::dbConnect(RSQLite::SQLite(),"database.db")
 
@@ -10,4 +10,4 @@ my_connection <- RSQLite::dbConnect(RSQLite::SQLite(),"database.db")
   
   table_name <- "Customers" 
   
-dbWriteTable(my_connection, table_name, this_file_contents, row.names = FALSE, append = TRUE)
+dbWriteTable(my_connection, table_name, this_file_contents, overwrite = TRUE)
