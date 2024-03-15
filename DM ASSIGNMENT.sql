@@ -27,7 +27,7 @@ create table shipment (
 
 -- creating table 'suppliers'
 create table suppliers (
-    supplier_id integer primary key,
+    supplier_id text primary key,
     product_id text not null,
     company_name text,
     contact_name text,
@@ -40,10 +40,10 @@ create table suppliers (
 
 -- creating table 'categories'
 create table categories (
-    category_id integer primary key,
+    category_id text primary key,
     category_name text,
     category_description text,
-    parent_category_id integer,
+    parent_category_id text,
 	product_id text not null,
     foreign key (parent_category_id) references categories(category_id)
 	foreign key (product_id) references products(product_id)
@@ -51,7 +51,7 @@ create table categories (
 
 -- creating table 'products'
 create table products (
-    product_id integer primary key,
+    product_id text primary key,
     product_name text not null,
     description text,
     price real,
@@ -62,7 +62,7 @@ create table products (
 
 -- creating table 'reviews'
 create table reviews (
-    review_id integer primary key,
+    review_id text primary key,
     product_id text not null,
     customer_id text not null,
     rating integer,
@@ -74,9 +74,9 @@ create table reviews (
 
 -- creating table 'transaction_detail'
 create table transaction_detail (
-    transaction_id integer primary key,
-    customer_id integer not null,
-    product_id integer not null,
+    transaction_id text primary key,
+    customer_id text not null,
+    product_id text not null,
     quantity integer,
     discount real,
     total_price real,
