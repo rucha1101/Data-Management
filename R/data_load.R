@@ -28,18 +28,5 @@ RSQLite::dbExecute(my_connection,"
     );
 ")
 
-
-
-
-  
-  this_filepath <- paste0("data_upload/Customers.csv") 
-  
-  this_file_contents <- read_csv(this_filepath) 
-  
-  table_name <- "Customers" 
-  
-dbWriteTable(my_connection, table_name, this_file_contents, row.names = FALSE, append = TRUE)
-
-
 dbDisconnect(my_connection)
 
