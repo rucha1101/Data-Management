@@ -32,7 +32,7 @@ RSQLite::dbExecute(my_connection,"
 
 
   
-  this_filepath <- paste0(data_upload/Customers.csv) 
+  this_filepath <- paste0("data_upload/Customers.csv") 
   
   this_file_contents <- read_csv(this_filepath) 
   
