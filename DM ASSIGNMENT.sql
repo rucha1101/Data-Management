@@ -52,7 +52,7 @@ create table categories (
 -- creating table 'products'
 create table products (
     product_id integer primary key,
-    name text not null,
+    product_name text not null,
     description text,
     price real,
     weight real,
