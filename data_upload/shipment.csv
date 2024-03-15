@@ -1,0 +1,51 @@
+shipment_id,transaction_id,shipment_date,shipment_phone_number,shipment_address,shipment_city,shipment_state,shipment_zip_code,shipment_country
+acc82b8a-f41b-4024-9695-bb0fc7906186,tid34371,5/19/2020,502-193-0942,9819 Elgar Plaza,Louisville,Kentucky,40233,United States
+2a3a91af-d105-4bcf-94c1-21331b23bbe1,tid11753,2/8/2021,303-801-4926,0971 Sunnyside Circle,Denver,Colorado,80255,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid85732,4/10/2021,804-660-2855,8047 Pleasure Hill,Richmond,Virginia,23203,United States
+4237bacb-fde3-4038-aee3-ff9d73996f55,tid13619,2/3/2019,208-957-5049,096 Eagan Street,Boise,Idaho,83705,United States
+c76a9425-5671-4e12-a32b-c407986fc705,tid09376,1/15/2022,559-345-9965,77530 Stoughton Court,Fresno,California,93778,United States
+d9dd186f-4b26-48f4-9228-e1efee277d5d,tid58335,11/15/2017,858-353-0153,72844 Larry Center,San Francisco,California,94121,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid48852,9/11/2023,314-680-3011,913 Rowland Place,Saint Louis,Missouri,63169,United States
+ef311a5d-d69c-4abc-b688-606a246a16cb,tid39496,7/27/2021,254-616-0813,2518 Dunning Road,Killeen,Texas,76544,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid22908,5/29/2021,302-622-1559,99035 Hallows Terrace,Wilmington,Delaware,19805,United States
+339d1af0-5df7-4fdd-bd3b-ad66d167f1d6,tid95351,8/16/2019,305-273-4704,1 Grasskamp Hill,Miami,Florida,33261,United States
+e160c00b-8f5d-41c2-a3d9-73a44fa80ea8,tid87673,5/23/2018,414-353-0352,11 Merry Street,Milwaukee,Wisconsin,53220,United States
+b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid87831,2/2/2020,903-318-8090,2 Rowland Center,Longview,Texas,75605,United States
+11d2a68d-916e-420d-83c9-dac136f094af,tid16239,12/11/2018,801-702-6919,2 Lakewood Gardens Hill,Salt Lake City,Utah,84140,United States
+79657700-9b91-4bb9-86f2-b5d55fe636dc,tid65697,9/17/2019,334-983-3294,92706 Mayfield Parkway,Montgomery,Alabama,36134,United States
+c1ddcf68-fd03-406b-8552-2aa186941db7,tid53060,7/9/2020,503-310-3110,1 Ramsey Plaza,Portland,Oregon,97232,United States
+5bd1dec6-7dad-4b53-b9b9-2f4725ebc276,tid93533,1/12/2017,832-518-8292,276 Kim Place,Katy,Texas,77493,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid02478,11/22/2017,423-962-4432,56311 Lakewood Trail,Chattanooga,Tennessee,37405,United States
+3d31bb12-f58a-4eee-bd42-d9db022137ff,tid45249,3/8/2018,559-761-3387,41 Annamark Drive,Fresno,California,93726,United States
+1dcc46c5-ecc8-4ca1-bdd9-d91fb4e4bbc4,tid84917,4/15/2021,315-516-0512,1239 Bunker Hill Lane,Syracuse,New York,13251,United States
+ed3e9c66-2029-4a5c-9110-a15ee28fe13d,tid82066,7/14/2018,704-372-1116,93 Truax Park,Charlotte,North Carolina,28263,United States
+5b68b1f8-f8f4-45fe-91b9-4fb18b7e6827,tid10103,6/21/2021,801-411-5164,0 Larry Street,Ogden,Utah,84409,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid95192,6/20/2023,254-492-9941,7 Northridge Trail,Temple,Texas,76505,United States
+0bdae237-3a3a-4f1d-97d0-4dd31b233346,tid73313,6/18/2020,903-140-7776,889 Mayer Terrace,Longview,Texas,75605,United States
+61d3d224-cc10-44d0-a03c-4309a556d501,tid45620,11/22/2021,212-271-2899,3 Pond Place,New York City,New York,10150,United States
+89fa7c29-2f64-4066-ba64-b2e70616d48e,tid44476,5/4/2023,407-592-1522,38219 Westport Hill,Daytona Beach,Florida,32118,United States
+e424baee-9504-42dd-a931-9316f5ef484c,tid20052,4/11/2018,215-546-8574,86 Forster Drive,Philadelphia,Pennsylvania,19109,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid53920,10/16/2021,612-324-6332,1657 2nd Avenue,Minneapolis,Minnesota,55402,United States
+cbcfadba-5012-4ff2-8b10-fc6a3c9e25b3,tid66460,8/7/2017,973-611-2825,4735 Milwaukee Alley,Newark,New Jersey,7104,United States
+ab27d8fe-4d11-417b-871a-e811630e8c4c,tid06927,11/20/2019,949-725-5027,0 Amoth Pass,Santa Ana,California,92705,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid37725,10/2/2023,202-193-5137,05096 Mallard Drive,Washington,District of Columbia,20046,United States
+38c4ac53-7495-46e8-b3ad-f3f098705e7a,tid45414,7/18/2022,850-955-8905,08 Arizona Point,Tallahassee,Florida,32309,United States
+4f01f8eb-b520-45c5-8151-3857af889468,tid93458,2/28/2024,616-614-5264,621 Kenwood Lane,Grand Rapids,Michigan,49518,United States
+20aea2d1-c504-4506-a137-7768e119013d,tid71062,8/26/2017,361-419-7498,226 Dwight Alley,Corpus Christi,Texas,78475,United States
+027e7e96-c820-4d6b-90a8-4c9b2b5904b2,tid93609,4/20/2022,309-975-8312,26 Eastwood Park,Bloomington,Illinois,61709,United States
+4858715c-28e0-4196-947c-a8ce8c63b303,tid49288,4/6/2023,901-167-7829,8826 Straubel Park,Memphis,Tennessee,38197,United States
+ce315e75-d63e-4f19-8334-00c4a03792e0,tid58910,8/31/2017,650-996-4726,00708 Onsgard Pass,Santa Clara,California,95054,United States
+dd5755d5-1c79-4bbd-bc6d-b0ba8c77b06c,tid79805,12/1/2018,561-229-7318,569 Towne Place,West Palm Beach,Florida,33411,United States
+ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid10348,3/28/2020,970-213-4481,96 Utah Way,Grand Junction,Colorado,81505,United States
+11cbea65-22af-47d4-9cd0-81b0bbf4245d,tid39440,12/6/2020,304-139-4899,14 Acker Alley,Huntington,West Virginia,25775,United States
+c699b5eb-cbc1-4cc0-9165-0408db7dda31,tid84301,9/22/2017,904-653-3354,00 Dakota Avenue,Jacksonville,Florida,32259,United States
+179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid60587,10/12/2020,704-595-2982,03863 Pierstorff Avenue,Charlotte,North Carolina,28289,United States
+a14d06a9-5adf-4d21-aa36-7488e2a48a31,tid65518,12/18/2023,712-882-9440,4 Independence Hill,Sioux City,Iowa,51105,United States
+93407e3b-d1e5-4674-85f0-935759fe30d4,tid26865,11/16/2018,505-810-4387,24567 Truax Junction,Albuquerque,New Mexico,87180,United States
+74a444a3-e95a-49be-ba4d-51ef5bfad299,tid86042,4/30/2017,571-890-2096,0310 Gale Circle,Alexandria,Virginia,22333,United States
+859f0e6a-3461-4f8c-ae1a-ed9c3b0734a6,tid15550,7/16/2018,215-134-3286,11 Merchant Place,Philadelphia,Pennsylvania,19146,United States
+0292626d-0c4b-4889-b870-596487b011af,tid68176,5/29/2022,231-465-3424,8355 Morrow Alley,Muskegon,Michigan,49444,United States
+44593b06-bac7-4f75-931d-1f583fd78391,tid32978,3/1/2022,704-773-8987,29656 Lunder Road,Charlotte,North Carolina,28235,United States
+d7bd0570-5034-4747-bf56-5e32624cbc45,tid89573,10/31/2018,919-270-9911,56 Havey Hill,Durham,North Carolina,27705,United States
+40618127-d7e6-45c8-8bd4-0d9d27df099e,tid07022,10/13/2021,208-186-4484,914 Pleasure Circle,Pocatello,Idaho,83206,United States
+1d60be3b-f25b-46f9-8569-1f69d172bc91,tid67550,4/24/2021,303-762-9575,04358 Schlimgen Parkway,Denver,Colorado,80223,United States

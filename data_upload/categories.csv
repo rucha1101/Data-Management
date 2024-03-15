@@ -1,0 +1,51 @@
+category_id,category_name,category_description,parent_category_id,product_id
+catid1,Electronics,Electronics Products,pcid1000,pid15345
+catid2,Clothing,Fashion Wear,pcid1009,pid56082
+catid3,Home & Garden,Household Items,pcid1000,pid97581
+catid4,Smartphones,Mobile Devices,pcid1100,pid65005
+catid5,Laptops,Portable Computers,pcid1100,pid55044
+catid6,TVs,Television Sets,pcid1100,pid82265
+catid7,Shirts,Men's Tops,pcid1200,pid38287
+catid8,Dresses,Women's Dresses,pcid1200,pid30100
+catid9,Pants,Bottom Wear,pcid1200,pid01492
+catid10,Furniture,Home Furnishings,pcid1300,pid97863
+catid11,Kitchenware,Cooking Essentials,pcid1300,pid78374
+catid12,Decor,Home Decoration,pcid1300,pid16700
+catid13,iPhone X,Apple iPhones,pcid1001,pid01119
+catid14,Samsung,Samsung Phones,pcid1400,pid18506
+catid15,Xiaomi,Xiaomi Smartphones,pcid1400,pid75597
+catid16,Dell,Dell Laptops,pcid1500,pid89300
+catid17,HP,HP Notebooks,pcid1500,pid46855
+catid18,Lenovo,Lenovo ThinkPads,pcid1500,pid66210
+catid19,LED,LED TVs,pcid1500,pid88316
+catid20,OLED,OLED Televisions,pcid1600,pid44307
+catid21,Smart,Smart TVs,pcid1600,pid23125
+catid22,T-shirts,Men's T-shirts,pcid1700,pid81136
+catid23,Polo,Polo Shirts,pcid1009,pid34593
+catid24,Dress Shirts,Men's Formal Shirts,pcid1700,pid08484
+catid25,Summer Dress,Women's Summer Dress,pcid1008,pid28340
+catid26,Party Dress,Women's Party Dress,pcid1008,pid33527
+catid27,Maxi Dress,Women's Maxi Dress,pcid1009,pid25982
+catid28,Jeans,Men's Jeans,pcid1009,pid18174
+catid29,Leggings,Women's Leggings,pcid1009,pid66132
+catid30,Sweatpants,Sweatpants,pcid1009,pid38248
+catid31,Sofas,Living Room Sofas,pcid1209,pid10573
+catid32,Beds,Bedroom Beds,pcid1209,pid45560
+catid33,Dining Sets,Dining Furniture,pcid1209,pid65488
+catid34,Cookware,Cooking Pans,pcid1209,pid02604
+catid35,Utensils,Kitchen Utensils,pcid1100,pid35616
+catid36,Cutlery,Eating Utensils,pcid1100,pid55834
+catid37,Wall Art,Wall Paintings,pcid1200,pid55158
+catid38,Vases,Decorative Vases,pcid1200,pid92416
+catid39,Rugs,Floor Rugs,pcid1200,pid20114
+catid40,iPhone,iPhone 12 Series,pcid1001,pid07178
+catid41,iPhone,iPhone 13 Series,pcid1001,pid07147
+catid42,Galaxy S21,Samsung Galaxy S21,pcid1400,pid27690
+catid43,Galaxy Note,Samsung Galaxy Note,pcid1400,pid87323
+catid44,Redmi Note,Redmi Note Series,pcid1500,pid17567
+catid45,Mi,Mi Series,pcid1500,pid98976
+catid46,Dell XPS,Dell XPS Series,pcid1500,pid65473
+catid47,Inspiron,Dell Inspiron Series,pcid1500,pid70547
+catid48,HP Pavilion,HP Pavilion Series,pcid1500,pid62235
+catid49,Envy,HP Envy Series,pcid1700,pid39202
+catid50,ThinkPad X1,Lenovo ThinkPad X1,pcid1800,pid76379
