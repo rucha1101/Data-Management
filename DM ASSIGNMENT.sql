@@ -42,7 +42,7 @@ create table suppliers (
 create table categories (
     category_id integer primary key,
     category_name text,
-    catergory_description text,
+    category_description text,
     parent_category_id integer,
 	product_id text not null,
     foreign key (parent_category_id) references categories(category_id)
