@@ -1,15 +1,15 @@
 -- creating table 'customers'
 create table customers (
-    customer_id integer primary key,
-    cx_email text not null,
-    sign_up_date date,
-    cx_phone_number text not null,
-    cx_address text not null,
-    cx_name text,
-    last_login timestamp,
-    birth_date date,
-    gender text
-);
+    customer_id text PRIMARY KEY,
+	cx_name text,
+	cx_email text not null,
+	gender text,
+	cx_address text not null,
+	sign_up_date date,
+	last_login_date date,
+	date_of_birth date,
+	cx_phone_number text not null   
+    );
 
 -- creating table 'shipment'
 create table shipment (
@@ -27,7 +27,7 @@ create table shipment (
 
 -- creating table 'suppliers'
 create table suppliers (
-    supplier_id integer primary key,
+    supplier_id text primary key,
     product_id text not null,
     company_name text,
     contact_name text,
@@ -40,10 +40,10 @@ create table suppliers (
 
 -- creating table 'categories'
 create table categories (
-    category_id integer primary key,
+    category_id text primary key,
     category_name text,
-    catergory_description text,
-    parent_category_id integer,
+    category_description text,
+    parent_category_id text,
 	product_id text not null,
     foreign key (parent_category_id) references categories(category_id)
 	foreign key (product_id) references products(product_id)
@@ -51,8 +51,8 @@ create table categories (
 
 -- creating table 'products'
 create table products (
-    product_id integer primary key,
-    name text not null,
+    product_id text primary key,
+    product_name text not null,
     description text,
     price real,
     weight real,
@@ -62,7 +62,7 @@ create table products (
 
 -- creating table 'reviews'
 create table reviews (
-    review_id integer primary key,
+    review_id text primary key,
     product_id text not null,
     customer_id text not null,
     rating integer,
@@ -74,9 +74,9 @@ create table reviews (
 
 -- creating table 'transaction_detail'
 create table transaction_detail (
-    transaction_id integer primary key,
-    customer_id integer not null,
-    product_id integer not null,
+    transaction_id text primary key,
+    customer_id text not null,
+    product_id text not null,
     quantity integer,
     discount real,
     total_price real,

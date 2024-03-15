@@ -27,12 +27,11 @@ jobs:
           Rscript -e 'install.packages(c("ggplot2","dplyr","readr","RSQLite"))'
       - name: Execute R script
         run: |
-          Rscript R/data_load.R
+          Rscript R/test_load.R
       - name: Add files
         run: |
           git config --global user.email "rucha.khartadkar123@gmail.com"
           git config --global user.name "rucha1101"
-          git add --all figures/
       - name: Commit files
         run: |
           git commit -m "Data Updated" || echo "No changes to commit"
