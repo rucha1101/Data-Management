@@ -1,0 +1,59 @@
+﻿customer_id,cx_name,cx_email,gender,cx_address,sign_up_date,last_login_date,date_of_birth,cx_phone_number
+1,Gloriane Baterip,gbaterip0@cnbc.com,Female,0154 Arrowood Park,06/01/2023,1/26/2024,01/09/1993,952-913-2249
+2,Zandra Huckell,zhuckell1@soup.io,Male,1 Northport Crossing,05/05/2023,2/28/2024,10/14/1982,832-886-8283
+3,Bess Midner,bmidner2@umich.edu,Female,8 Carioca Alley,12/09/2018,02/10/2024,12/30/1958,594-123-2343
+4,Gerta Room,groom3@deviantart.com,Male,7 Morning Road,11/16/2021,1/25/2024,7/20/1996,435-110-5151
+5,Lorrin Grimme,lgrimme4@cyberchimps.com,Male,81864 Carey Parkway,01/04/2022,02/09/2024,9/27/1957,455-827-6525
+6,Dania Rapson,drapson5@homestead.com,Female,0 Pawling Crossing,11/10/2023,1/22/2024,7/14/1963,494-415-6815
+7,Matty Midghall,mmidghall6@house.gov,Female,51 Erie Hill,9/27/2019,1/18/2024,7/28/1970,771-398-2660
+8,Estele Demeter,edemeter7@scribd.com,Male,20459 Anthes Lane,03/07/2019,2/23/2024,07/07/1971,890-248-4476
+9,Marie-jeanne Clausner,mclausner8@vimeo.com,Female,6417 Ryan Lane,07/07/2023,02/08/2024,1/17/1977,203-248-8570
+10,Maryanne Malan,mmalan9@craigslist.org,Female,4212 Dovetail Alley,2/27/2023,2/14/2024,04/12/1958,350-784-6281
+11,Dyan Juste,djustea@archive.org,Male,770 Del Mar Circle,4/26/2019,1/21/2024,12/13/1966,964-549-0842
+12,Ainslie Wilstead,awilsteadb@sphinn.com,Female,2035 Forest Dale Parkway,01/01/2019,1/26/2024,12/04/1977,114-502-5994
+13,Gussie Zipsell,gzipsellc@narod.ru,Female,265 Twin Pines Street,3/29/2023,1/14/2024,07/12/2005,304-714-9257
+14,Cayla Morilla,cmorillad@bloomberg.com,Female,83000 Michigan Road,3/15/2022,1/28/2024,7/16/2005,830-663-3513
+15,Ermentrude Phelp,ephelpe@devhub.com,Male,292 International Alley,10/15/2019,02/09/2024,08/03/1975,739-735-2531
+16,Ava Wohlers,awohlersf@1688.com,Female,16 Columbus Junction,3/31/2017,1/26/2024,12/24/1991,272-105-9392
+17,Lynnelle Gillett,lgillettg@mozilla.com,Female,98 Fieldstone Place,1/23/2021,2/24/2024,07/11/1978,853-118-4027
+18,Nani Wedderburn,nwedderburnh@bloomberg.com,Female,4 Waxwing Street,1/22/2021,03/02/2024,1/15/1987,961-518-7365
+19,Anne-marie McGairl,amcgairli@springer.com,Female,1673 Russell Way,11/22/2022,1/23/2024,08/08/1970,282-480-5705
+20,Sara-ann Shimwall,sshimwallj@pen.io,Male,49 Maywood Alley,11/12/2019,1/17/2024,3/19/1963,816-718-9073
+21,Feliza MacMenamie,fmacmenamiek@buzzfeed.com,Female,216 Scott Circle,5/23/2017,1/26/2024,05/07/1966,198-438-7312
+22,Annabelle Penkethman,apenkethmanl@cnn.com,Male,35 Graceland Lane,12/01/2017,03/01/2024,9/17/1959,860-945-1746
+23,Lorelei Roston,lrostonm@prnewswire.com,Female,4722 Coolidge Point,05/08/2021,02/12/2024,11/28/1960,949-335-6646
+24,Joyce Varcoe,jvarcoen@yahoo.co.jp,Female,640 Mosinee Drive,9/27/2020,1/29/2024,07/07/1976,928-439-2302
+25,Tessi Sheryne,tsheryneo@intel.com,Male,627 Chive Junction,07/08/2017,2/23/2024,11/20/1980,695-667-2448
+26,Becky Farington,bfaringtonp@amazon.co.jp,Female,23061 Elmside Junction,12/22/2022,02/04/2024,6/18/2007,767-492-8117
+27,Gustie Farnan,gfarnanq@diigo.com,Female,9 Pennsylvania Alley,10/12/2018,01/03/2024,01/03/2009,362-915-5586
+28,Rosabelle Macvey,rmacveyr@nifty.com,Female,8 Marcy Place,10/25/2021,02/12/2024,12/04/2003,713-147-5844
+29,Stace Nineham,sninehams@flavors.me,Female,811 Hauk Alley,05/02/2021,02/06/2024,05/08/1977,217-618-2958
+30,Bibi Braunds,bbraundst@bravesites.com,Male,07056 Vermont Terrace,1/19/2022,2/27/2024,06/02/2006,683-769-7608
+31,Jo ann Baudic,jannu@wikipedia.org,Female,9 Rigney Road,10/20/2017,02/12/2024,5/13/1987,629-262-0310
+32,Audi Stivani,astivaniv@netlog.com,Female,66733 Independence Way,03/11/2018,2/24/2024,02/01/1997,231-542-3639
+33,Corette Fareweather,cfareweatherw@tamu.edu,Male,5205 Eastwood Way,6/19/2019,2/15/2024,02/02/1983,999-197-6656
+34,Blondell Kittley,bkittleyx@technorati.com,Female,373 Knutson Way,5/16/2020,12/30/2023,1/18/1957,336-799-7780
+35,Fernandina Gleeton,fgleetony@ted.com,Female,4 Village Place,3/19/2017,2/21/2024,04/08/2008,901-277-5283
+36,Shayla Szachniewicz,sszachniewiczz@godaddy.com,Female,25598 Raven Lane,7/28/2023,1/20/2024,10/08/1957,207-592-6182
+37,Marcille Sennett,msennett10@biglobe.ne.jp,Male,20 Delaware Avenue,06/10/2019,1/22/2024,10/04/2003,788-438-1349
+38,Tamarra Quilliam,tquilliam11@51.la,Female,621 Melody Circle,8/30/2021,01/02/2024,04/09/2004,296-551-1692
+39,Arliene Cotillard,acotillard12@about.com,Female,25 Harbort Pass,8/24/2017,2/22/2024,09/07/1982,972-358-6036
+40,Sonya Firebrace,sfirebrace13@addthis.com,Female,8704 Rowland Lane,6/25/2021,12/30/2023,02/12/1961,199-913-3228
+41,Leonore Soigoux,lsoigoux14@yandex.ru,Male,98232 Eliot Crossing,09/05/2022,2/27/2024,02/10/1985,285-782-5737
+42,Arlena Dullard,adullard15@github.com,Female,397 Tomscot Parkway,11/30/2018,01/07/2024,05/08/1996,252-573-2436
+43,Tracie Sail,tsail16@tripod.com,Female,039 Becker Trail,9/24/2022,2/26/2024,3/19/1993,918-215-7842
+44,Emmalee Archibald,earchibald17@reference.com,Male,819 Dennis Terrace,03/12/2017,02/03/2024,6/25/1989,564-278-0514
+45,Gisela McIlvaney,gmcilvaney18@topsy.com,Male,4542 Sugar Point,12/31/2022,1/22/2024,6/15/1994,425-239-4716
+46,Renee Paoletti,rpaoletti19@cbsnews.com,Female,7 Village Green Hill,1/31/2018,2/25/2024,12/31/1966,154-113-5006
+47,Dulcy Barber,dbarber1a@friendfeed.com,Female,1375 Manufacturers Court,11/17/2018,2/25/2024,9/30/1961,114-464-6001
+48,Amberly Dimond,adimond1b@yellowbook.com,Male,66 7th Avenue,12/28/2017,1/17/2024,07/09/1960,235-277-8311
+49,Eddie Beeho,ebeeho1c@digg.com,Male,89700 Sunbrook Street,09/11/2018,01/02/2024,11/18/1957,961-871-1979
+50,Sadella Ogilvie,sogilvie1d@mediafire.com,Male,48884 Sauthoff Lane,11/27/2019,1/30/2024,02/08/1961,443-688-3738
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
