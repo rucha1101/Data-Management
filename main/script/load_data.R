@@ -1,10 +1,15 @@
+# install.packages("readr")
+# install.packages("RSQLite")
+# install.packages("dplyr")
+# install.packages("readxl")
+# install.packages("openxlsx")
 library(readr)
 library(RSQLite)
 library(dplyr)
 library(readxl)
 library(openxlsx)
 
-
+data <- readr::read_csv("/cloud/project/main/data/csv/Categories.csv")
 
 my_connection <- RSQLite::dbConnect(RSQLite::SQLite(),"database.db")
 
@@ -21,26 +26,17 @@ for (table in tables) {
 
 RSQLite::dbExecute(my_connection,"
   CREATE TABLE 'Customers' (
-    'customer_id' VARCHAR(4) PRIMARY KEY,
+    'customer_id' integer primary key,
+    'cx_email' text not null,
+    'sign_up_date' date,
+    'cx_phone_number' text not null,
+    'cx_address' text not null,
+    'cx_name' text,
+    'last_login' timestamp,
+    'birth_date' date,
+    'gender' text
     );
 ")
 
-RSQLite::dbExecute(my_connection," 
-  CREATE TABLE '' ();
-")
-
-RSQLite::dbExecute(my_connection,"
-  CREATE TABLE 'Suppliers' ();
-")
-
-RSQLite::dbExecute(my_connection,"
-  CREATE TABLE 'Categories' ();
-")
-
-RSQLite::dbExecute(my_connection," 
-  CREATE TABLE ''();
-")
-
-
 # Save the workbook
-openxlsx::saveWorkbook(wb, "analysis_result/analysis_results.xlsx", overwrite = TRUE)
+#openxlsx::saveWorkbook(wb, "/cloud/project/main/script/analysis_results.xlsx", overwrite = TRUE)
