@@ -2,8 +2,6 @@ library(readr)
 library(RSQLite)
 library(dplyr)
 
-
-
 my_connection <- RSQLite::dbConnect(RSQLite::SQLite(),"database.db")
 
 
@@ -29,3 +27,16 @@ RSQLite::dbExecute(my_connection,"
 	'cx_phone_number' text not null   
     );
 ")
+
+
+
+
+  
+  this_filepath <- paste0(data_upload/Customers.csv) 
+  
+  this_file_contents <- read_csv(this_filepath) 
+  
+  table_name <- "Customers" 
+  
+  dbAppendTable(connection_new, table_name, this_file_contents) 
+  
