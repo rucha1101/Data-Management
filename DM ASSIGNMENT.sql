@@ -1,14 +1,14 @@
 -- creating table 'customers'
 create table customers (
-    'customer_id' VARCHAR(4) PRIMARY KEY,
-	'cx_name' text,
-	'cx_email' text not null,
-	'gender' text,
-	'cx_address' text not null,
-	'sign_up_date' date,
-	'last_login_date' timestamp,
-	'date_of_birth' date,
-	'cx_phone_number' text not null   
+    customer_id VARCHAR(4) PRIMARY KEY,
+	cx_name text,
+	cx_email text not null,
+	gender text,
+	cx_address text not null,
+	sign_up_date date,
+	last_login_date timestamp,
+	date_of_birth date,
+	cx_phone_number text not null   
     );
 
 -- creating table 'shipment'
