@@ -38,5 +38,8 @@ RSQLite::dbExecute(my_connection,"
   
   table_name <- "Customers" 
   
-  dbAppendTable(my_connection, table_name, this_file_contents) 
-  
+dbWriteTable(my_connection, table_name, this_file_contents, row.names = FALSE, append = TRUE)
+
+
+dbDisconnect(my_connection)
+
