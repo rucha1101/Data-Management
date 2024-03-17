@@ -69,6 +69,27 @@ lapply(all_files, append_csv_to_table, my_connection)
 
 
 
+# Count for all tables
+display_table_counts <- function(connection) {
+  # Retrieve table names
+  tables_query <- "SELECT name FROM sqlite_master WHERE type='table';"
+  tables <- dbGetQuery(connection, tables_query)$name
+  
+  if(length(tables) > 0) {
+    for (table_name in tables) {
+      count_query <- paste0("SELECT COUNT(*) AS count FROM ", table_name, ";")
+      count <- dbGetQuery(connection, count_query)$count
+      cat(table_name, ": ", count, "\n", sep = "")
+    }
+  } else {
+    cat("No tables found in the database.\n")
+  }
+}
+
+# Display table counts
+display_table_counts(my_connection)
+
+
 
 # 1. Top 10 Products
 
