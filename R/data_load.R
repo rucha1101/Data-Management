@@ -97,7 +97,7 @@ create table reviews (
 ")
 
 RSQLite::dbExecute(my_connection,"
-create table transaction_details (
+create table transactiondetails (
     'transaction_id' text primary key,
     'customer_id' text not null,
     'product_id' text not null,
