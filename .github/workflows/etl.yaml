@@ -31,6 +31,9 @@ jobs:
       - name: Execute R script ins
         run: |
           Rscript R/demo.R
+      - name: Execute R script val
+        run: |
+          Rscript R/cross_table.R
       - name: Add files
         run: |
           git config --global user.email "rucha.khartadkar123@gmail.com"
