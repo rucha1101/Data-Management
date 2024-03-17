@@ -2,11 +2,14 @@ library(readr)
 library(RSQLite)
 library(dplyr)
 
+#connect to the SQLite database
 my_connection <- RSQLite::dbConnect(RSQLite::SQLite(),"database.db")
 
 
 # Physical Schema
 tables <- RSQLite::dbListTables(my_connection)
+
+# Part 1.2 - SQL Database Schema Creation 
 
 # drop all tables
 for (table in tables) {
@@ -115,6 +118,11 @@ create table transaction_details (
 dbGetQuery(my_connection, 
            sprintf("SELECT name FROM sqlite_master WHERE type='table';")
 )
+
+
+
+
+
 
 dbDisconnect(my_connection)
 
