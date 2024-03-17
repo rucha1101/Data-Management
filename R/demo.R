@@ -42,6 +42,8 @@
 library(DBI)
 library(readr)
 library(RSQLite)
+library(ggplot2)
+
 
 my_connection <- dbConnect(RSQLite::SQLite(), "database.db")
 
@@ -64,3 +66,23 @@ append_csv_to_table <- function(file_path, connection) {
 
 all_files <- list.files(path = "data_upload", pattern = "\\.csv$", full.names = TRUE)
 lapply(all_files, append_csv_to_table, my_connection)
+
+sql_query <- "
+SELECT p.product_name, AVG(r.rating) AS average_rating
+FROM reviews r
+JOIN products p ON r.product_id = p.product_id
+GROUP BY p.product_id
+ORDER BY average_rating DESC
+LIMIT 10
+"
+
+top_rated_products <- dbGetQuery(my_connection, sql_query)
+
+ggplot(top_rated_products, aes(x = reorder(product_name, average_rating), y = average_rating, fill = average_rating)) +
+  geom_col() +
+  coord_flip() +  # Horizontal bars for better readability
+  labs(title = "Top 10 Rated Products", x = "Product Name", y = "Average Rating") +
+  scale_fill_viridis_c() +  # Use a nice color scale for the fill
+  theme_minimal()
+
+
