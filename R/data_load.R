@@ -110,5 +110,11 @@ create table transaction_details (
 );
 ")
 
+# Check if the tables are created
+
+dbGetQuery(my_connection, 
+           sprintf("SELECT name FROM sqlite_master WHERE type='table';")
+)
+
 dbDisconnect(my_connection)
 
