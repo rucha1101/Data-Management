@@ -15,6 +15,7 @@ library(dplyr)
 
 all_files <- list.files("data_upload/") 
 
+all_files
 for (variable in all_files) { 
   
   this_filepath <- paste0("data_upload/", variable) 
