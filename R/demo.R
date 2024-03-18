@@ -115,7 +115,7 @@ append_csv_to_table <- function(file_path, connection) {
 
 
 
-working ig
+#working ig
 categories_path <- "data_upload/categories.csv"
 products_path <- "data_upload/products.csv"
 
