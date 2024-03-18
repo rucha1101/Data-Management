@@ -52,6 +52,11 @@ display_table_counts(my_connection)
 
 
 # VALIDATION CODE
+Customers_path <- "data_upload/Customers.csv"
+shipment_path <- "data_upload/shipment.csv"
+transactiondetails_path  <- "data_upload/transactiondetails.csv"
+reviews_path <- "data_upload/reviews.csv"
+suppliers_path <- "data_upload/suppliers.csv"
 categories_path <- "data_upload/categories.csv"
 products_path <- "data_upload/products.csv"
 
