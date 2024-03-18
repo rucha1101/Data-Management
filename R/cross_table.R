@@ -1,7 +1,7 @@
 # Load required libraries
 library(dplyr)
 
-setwd("/data_upload/")
+
 # Load CSV files into data frames
 customers <- read.csv("Customers.csv")
 shipment <- read.csv("shipment.csv")
