@@ -2,6 +2,7 @@ library(DBI)
 library(readr)
 library(RSQLite)
 library(ggplot2)
+library(sqldf)
 
 
 my_connection <- dbConnect(RSQLite::SQLite(), "database.db")
@@ -23,46 +24,67 @@ append_csv_to_table <- function(file_path, connection) {
   })
 }
 
-library(readr)
-library(sqldf)
-
+# Define paths
 categories_path <- "data_upload/categories.csv"
 products_path <- "data_upload/products.csv"
 error_log_path <- "error_log.txt"
 
-# Function to log errors
+# Function to log errors to a file with timestamp
 log_error <- function(message) {
-  writeLines(as.character(Sys.time()), error_log_path, append = TRUE)
-  writeLines(message, error_log_path, append = TRUE)
+  timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+  cat(paste(timestamp, message, "\n"), file = error_log_path, append = TRUE)
 }
 
 if(file.exists(categories_path) && file.exists(products_path)) {
-  categories_data <- read_csv(categories_path, show_col_types = FALSE)
-  products_data <- read_csv(products_path, show_col_types = FALSE)
-  
-  # Attempt to identify missing product_ids with sqldf
   tryCatch({
+    categories_data <- read_csv(categories_path, show_col_types = FALSE)
+    products_data <- read_csv(products_path, show_col_types = FALSE)
+    
+    # Using SQL query with sqldf to find missing product_ids
     missing_product_ids <- sqldf("SELECT c.product_id
                                   FROM categories_data c
                                   LEFT JOIN products_data p ON c.product_id = p.product_id
-                                  WHERE p.product_id IS NOT NULL")
+                                  WHERE p.product_id IS NULL")
     
     if(nrow(missing_product_ids) > 0) {
-      error_message <- paste("There are product IDs in 'categories' that don't exist in 'products'. Data insertion halted.", 
-                             "Missing product IDs:", 
-                             paste(missing_product_ids$product_id, collapse = ", "), 
-                             sep = "\n")
+      error_message <- paste("There are product IDs in 'categories' that don't exist in 'products'.",
+                             "Data insertion halted. Missing product IDs:",
+                             paste(missing_product_ids$product_id, collapse = ", "))
       log_error(error_message)
       stop(error_message)
     }
   }, error = function(e) {
-    log_error(paste("Failed to perform SQL query on data frames:", e$message))
+    # Log and rethrow the error
+    log_error(e$message)
     stop(e)
   })
 } else {
-  log_error("One or both of the required CSV files do not exist.")
-  stop("One or both of the required CSV files do not exist.")
+  error_message <- "One or both of the required CSV files do not exist."
+  log_error(error_message)
+  stop(error_message)
 }
+
+
+
+# 
+# categories_path <- "data_upload/categories.csv"
+# products_path <- "data_upload/products.csv"
+# 
+# if(file.exists(categories_path) && file.exists(products_path)) {
+#   categories_data <- read_csv(categories_path, show_col_types = FALSE)
+#   products_data <- read_csv(products_path, show_col_types = FALSE)
+#   
+#   # Using SQL query with sqldf
+#   missing_product_ids <- sqldf("SELECT c.product_id
+#                                 FROM categories_data c
+#                                 LEFT JOIN products_data p ON c.product_id = p.product_id
+#                                 WHERE p.product_id IS NULL")
+#   
+#   if(nrow(missing_product_ids) > 0) {
+#     stop("There are product IDs in 'categories' that don't exist in 'products'. Data insertion halted.")
+#   }
+# }
+# 
 
 
 
