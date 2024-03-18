@@ -24,15 +24,60 @@ append_csv_to_table <- function(file_path, connection) {
   })
 }
 
+#ERROR IN TRY CATCH
+# # Define paths
+# categories_path <- "data_upload/categories.csv"
+# products_path <- "data_upload/products.csv"
+# error_log_path <- "error_log.txt"
+# 
+# # Function to log errors to a file with timestamp
+# log_error <- function(message) {
+#   timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+#   cat(paste(timestamp, message, "\n"), file = error_log_path, append = TRUE)
+# }
+# 
+# if(file.exists(categories_path) && file.exists(products_path)) {
+#   tryCatch({
+#     categories_data <- read_csv(categories_path, show_col_types = FALSE)
+#     products_data <- read_csv(products_path, show_col_types = FALSE)
+#     
+#     # Using SQL query with sqldf to find missing product_ids
+#     missing_product_ids <- sqldf("SELECT c.product_id
+#                                   FROM categories_data c
+#                                   LEFT JOIN products_data p ON c.product_id = p.product_id
+#                                   WHERE p.product_id IS NOT NULL")
+#     
+#     if(nrow(missing_product_ids) > 0) {
+#       error_message <- paste("There are product IDs in 'categories' that don't exist in 'products'.",
+#                              "Data insertion halted. Missing product IDs:",
+#                              paste(missing_product_ids$product_id, collapse = ", "))
+#       log_error(error_message)
+#       stop(error_message)
+#     }
+#   }, error = function(e) {
+#     # Log and rethrow the error
+#     log_error(e$message)
+#     stop(e)
+#   })
+# } else {
+#   error_message <- "One or both of the required CSV files do not exist."
+#   log_error(error_message)
+#   stop(error_message)
+# }
+
+
+
+
 # Define paths
 categories_path <- "data_upload/categories.csv"
 products_path <- "data_upload/products.csv"
 error_log_path <- "error_log.txt"
+missing_ids_log_path <- "missing_product_ids_log.txt" # File to log missing product IDs
 
-# Function to log errors to a file with timestamp
-log_error <- function(message) {
+# Function to log errors and messages to a file with timestamp
+log_message <- function(message, path = error_log_path) {
   timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
-  cat(paste(timestamp, message, "\n"), file = error_log_path, append = TRUE)
+  cat(paste(timestamp, message, "\n"), file = path, append = TRUE)
 }
 
 if(file.exists(categories_path) && file.exists(products_path)) {
@@ -47,26 +92,28 @@ if(file.exists(categories_path) && file.exists(products_path)) {
                                   WHERE p.product_id IS NOT NULL")
     
     if(nrow(missing_product_ids) > 0) {
-      error_message <- paste("There are product IDs in 'categories' that don't exist in 'products'.",
-                             "Data insertion halted. Missing product IDs:",
-                             paste(missing_product_ids$product_id, collapse = ", "))
-      log_error(error_message)
-      stop(error_message)
+      missing_ids_msg <- paste("Missing product IDs:",
+                               paste(missing_product_ids$product_id, collapse = ", "))
+      log_message("There are product IDs in 'categories' that don't exist in 'products'. Data insertion halted.", error_log_path)
+      log_message(missing_ids_msg, missing_ids_log_path)
+      
+      # Optionally, you can stop the execution here or handle the situation differently
+      # stop("Data insertion halted due to missing product IDs.")
+    } else {
+      message("No missing product IDs found. Proceeding with data insertion.")
+      # Code to proceed with data insertion if no missing IDs are found
     }
   }, error = function(e) {
     # Log and rethrow the error
-    log_error(e$message)
+    log_message(e$message, error_log_path)
     stop(e)
   })
 } else {
-  error_message <- "One or both of the required CSV files do not exist."
-  log_error(error_message)
-  stop(error_message)
+  log_message("One or both of the required CSV files do not exist.", error_log_path)
+  stop("One or both of the required CSV files do not exist.")
 }
 
-
-
-# 
+# working ig
 # categories_path <- "data_upload/categories.csv"
 # products_path <- "data_upload/products.csv"
 # 
