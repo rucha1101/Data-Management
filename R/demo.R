@@ -28,20 +28,40 @@ library(sqldf)
 
 categories_path <- "data_upload/categories.csv"
 products_path <- "data_upload/products.csv"
+error_log_path <- "error_log.txt"
+
+# Function to log errors
+log_error <- function(message) {
+  writeLines(as.character(Sys.time()), error_log_path, append = TRUE)
+  writeLines(message, error_log_path, append = TRUE)
+}
 
 if(file.exists(categories_path) && file.exists(products_path)) {
   categories_data <- read_csv(categories_path, show_col_types = FALSE)
   products_data <- read_csv(products_path, show_col_types = FALSE)
   
-  # Using SQL query with sqldf
-  missing_product_ids <- sqldf("SELECT c.product_id
-                                FROM categories_data c
-                                LEFT JOIN products_data p ON c.product_id = p.product_id
-                                WHERE p.product_id IS NULL")
-  
-  if(nrow(missing_product_ids) > 0) {
-    stop("There are product IDs in 'categories' that don't exist in 'products'. Data insertion halted.")
-  }
+  # Attempt to identify missing product_ids with sqldf
+  tryCatch({
+    missing_product_ids <- sqldf("SELECT c.product_id
+                                  FROM categories_data c
+                                  LEFT JOIN products_data p ON c.product_id = p.product_id
+                                  WHERE p.product_id IS NOT NULL")
+    
+    if(nrow(missing_product_ids) > 0) {
+      error_message <- paste("There are product IDs in 'categories' that don't exist in 'products'. Data insertion halted.", 
+                             "Missing product IDs:", 
+                             paste(missing_product_ids$product_id, collapse = ", "), 
+                             sep = "\n")
+      log_error(error_message)
+      stop(error_message)
+    }
+  }, error = function(e) {
+    log_error(paste("Failed to perform SQL query on data frames:", e$message))
+    stop(e)
+  })
+} else {
+  log_error("One or both of the required CSV files do not exist.")
+  stop("One or both of the required CSV files do not exist.")
 }
 
 
