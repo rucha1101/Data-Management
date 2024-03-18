@@ -1,51 +1,51 @@
-product_id,product_name,description,price,weight,color,material
-pid15345,iPhone 12 Pro Max,Apple iPhone,1099,226,Silver,Glass
-pid56082,Samsung Galaxy S21,Samsung Smartphone,999,200,Phantom Black,Plastic
-pid97581,Dell XPS 13,Dell Laptop,1299,1200,Silver,Aluminum
-pid65005,Men's Polo Shirt,Casual Men's Polo Shirt,25,300,Blue,Cotton
-pid55044,Women's Maxi Dress,Elegant Maxi Dress,50,400,Black,Polyester
-pid82265,Smart LED TV,4K Smart Television,899,25000,Black,Plastic
-pid38287,Leather Sofa,Luxury Living Room Sofa,899,15000,Brown,Leather
-pid30100,Stainless Steel Cookware Set,Kitchen Cookware Set,99,10000,Silver,Stainless Steel
-pid01492,iPhone 13 Pro,Apple iPhone,1199,228,Graphite,Glass
-pid97863,Women's Leggings,Comfortable Leggings,30,200,Grey,Spandex
-pid78374,HP Envy x360,HP Convertible Laptop,899,1500,Silver,Aluminum
-pid16700,Men's Formal Shirt,Classic Dress Shirt,35,350,White,Cotton
-pid01119,Xiaomi Redmi Note,Xiaomi Smartphone,299,210,Blue,Plastic
-pid18506,Dining Table Set,Wooden Dining Table Set,599,8000,Brown,Wood
-pid75597,Women's Party Dress,Stylish Party Dress,60,350,Red,Satin
-pid89300,OLED Smart TV,8K OLED Television,1499,28000,Black,Plastic
-pid46855,Queen Size Bed,Comfortable Bed,699,30000,Grey,Wood
-pid66210,Non-stick Cookware Set,Cooking Set,49,8000,Black,Aluminum
-pid88316,iPhone 12 Mini,Apple iPhone,699,133,Green,Glass
-pid44307,Samsung Galaxy Note,Samsung Smartphone,1099,220,Mystic Bronze,Glass
-pid23125,Lenovo ThinkPad X1,Lenovo Business Laptop,1399,1400,Black,Carbon Fiber
-pid81136,Men's T-shirt,Casual Men's T-shirt,20,250,Black,Cotton
-pid34593,Summer Dress,Floral Summer Dress,45,350,Yellow,Rayon
-pid08484,LED TV,HD LED Television,499,20000,Black,Plastic
-pid28340,Recliner Chair,Comfortable Recliner,399,10000,Beige,Fabric
-pid33527,Stainless Steel Utensil Set,Kitchen Utensil Set,29,5000,Silver,Stainless Steel
-pid25982,iPhone SE,Apple iPhone,399,148,Red,Glass
-pid18174,Samsung Galaxy Z Flip,Samsung Foldable Phone,1299,183,Mirror Black,Glass
-pid66132,Dell Inspiron 15,Dell Budget Laptop,699,1800,Black,Plastic
-pid38248,Polo Shirt,Men's Polo Shirt,30,300,White,Cotton
-pid10573,Midi Dress,Women's Midi Dress,40,300,Pink,Polyester
-pid45560,Smart TV,Full HD Smart TV,699,22000,Black,Plastic
-pid65488,Sectional Sofa,Modular Sectional Sofa,1499,18000,Grey,Fabric
-pid02604,Cast Iron Cookware Set,Durable Cookware Set,79,12000,Black,Cast Iron
-pid35616,iPhone 11 Pro Max,Apple iPhone,1099,226,Midnight Green,Glass
-pid55834,Samsung Galaxy Z Fold,Samsung Foldable Phone,1799,276,Mystic Bronze,Glass
-pid55158,HP Pavilion Laptop,HP Performance Laptop,799,1700,Silver,Plastic
-pid92416,V-neck T-shirt,Men's V-neck T-shirt,22,250,Navy,Cotton
-pid20114,Wrap Dress,Women's Wrap Dress,35,320,Blue,Viscose
-pid07178,4K TV,4K Ultra HD Television,799,24000,Black,Plastic
-pid07147,Futon Sofa Bed,Sofa Bed with Futon,399,16000,Grey,Fabric
-pid27690,Kitchen Knife Set,Stainless Steel Knives,49,2000,Silver,Stainless Steel
-pid87323,iPhone XR,Apple iPhone,599,194,Coral,Glass
-pid17567,Samsung Galaxy S10,Samsung Smartphone,899,157,Prism Blue,Glass
-pid98976,MacBook Air,Apple Laptop,999,1200,Space Grey,Aluminum
-pid65473,Button-down Shirt,Men's Button-down Shirt,30,350,Plaid,Cotton
-pid70547,Midi Skirt,Women's Midi Skirt,35,280,Black,Rayon
-pid62235,Curved TV,Curved LED Television,1199,30000,Silver,Plastic
-pid39202,Velvet Sofa,Plush Velvet Sofa,1199,20000,Blue,Velvet
-pid76379,Wrap Dress,Women's Wrap Dress,20,320,Red,Viscose
+﻿product_id,product_name,description,price,weight,color
+pid15345,Generic Electronics Product,A general electronics product.,100,0.5,Black
+pid56082,Fashionable Clothing,A trendy piece of clothing.,50,0.3,Blue
+pid97581,Household Item,A common household item.,20,1,White
+pid65005,Smartphone,A high-tech mobile device.,500,0.2,Black
+pid55044,Portable Computer,A portable computing device.,800,2,Silver
+pid82265,Television Set,A home entertainment device.,1000,15,Black
+pid38287,Men's Shirt,A stylish men's top.,30,0.4,Gray
+pid30100,Women's Dress,A fashionable women's dress.,60,0.6,Red
+pid01492,Pair of Pants,A comfortable pair of pants.,40,0.5,Black
+pid97863,Furniture Piece,A piece of furniture for home.,200,10,Brown
+pid78374,Kitchenware Item,A useful kitchen essential.,10,0.8,Green
+pid16700,Decorative Item,A decorative item for home.,15,1.5,Gold
+pid01119,Apple iPhone,A premium smartphone by Apple.,1000,0.2,Space Gray
+pid18506,Samsung Phone,A flagship phone by Samsung.,900,0.3,Phantom Black
+pid75597,Xiaomi Smartphone,A budget-friendly smartphone.,300,0.25,Azure Blue
+pid89300,Dell Laptop,A high-performance laptop by Dell.,1200,2.5,Black
+pid46855,HP Notebook,A reliable notebook by HP.,1000,2,Silver
+pid66210,Lenovo ThinkPad,A durable business laptop.,1500,2.8,Black
+pid88316,LED TV,A television with LED technology.,800,12,Black
+pid44307,OLED Television,A high-end OLED TV.,1500,14,Black
+pid23125,Smart TV,A smart television with internet connectivity.,1000,13,Black
+pid81136,Men's T-shirt,A comfortable men's t-shirt.,20,0.3,White
+pid34593,Polo Shirt,A classic polo shirt.,25,0.4,Blue
+pid08484,Dress Shirt,A formal dress shirt for men.,35,0.5,White
+pid28340,Women's Summer Dress,A stylish summer dress for women.,45,0.6,Yellow
+pid33527,Women's Party Dress,A glamorous party dress for women.,80,0.8,Black
+pid25982,Women's Maxi Dress,A long and elegant dress for women.,70,0.7,Pink
+pid18174,Men's Jeans,A pair of comfortable men's jeans.,50,0.7,Denim Blue
+pid66132,Women's Leggings,A stretchy and comfortable bottom wear for women.,30,0.4,Black
+pid38248,Sweatpants,Comfortable pants for lounging.,25,0.5,Gray
+pid10573,Living Room Sofa,A comfortable sofa for the living room.,500,30,Beige
+pid45560,Bedroom Bed,A cozy bed for the bedroom.,700,40,Brown
+pid65488,Dining Set,A set of dining furniture.,600,35,Cherry Wood
+pid02604,Cooking Pan,A versatile cooking pan.,20,0.6,Black
+pid35616,Kitchen Utensil,A set of essential kitchen utensils.,15,0.8,Red
+pid55834,Eating Utensil,A set of eating utensils.,10,0.5,Silver
+pid55158,Wall Painting,A decorative wall painting.,50,2,Multi-color
+pid92416,Decorative Vase,A stylish decorative vase.,30,1,Blue
+pid20114,Floor Rug,A decorative floor rug.,40,3,Gray
+pid07178,iPhone 12,A popular iPhone model.,900,0.2,Space Gray
+pid07147,iPhone 13,The latest iPhone model.,1200,0.2,Graphite
+pid27690,Samsung Galaxy S21,A flagship Samsung smartphone.,1000,0.3,Phantom Silver
+pid87323,Samsung Galaxy Note,A premium Samsung phablet.,1100,0.35,Mystic Bronze
+pid17567,Redmi Note,A budget-friendly Xiaomi smartphone.,300,0.25,Azure Blue
+pid98976,Mi Series,A series of Xiaomi smartphones.,500,0.3,Black
+pid65473,Dell XPS,A premium line of Dell laptops.,1500,2.5,Platinum Silver
+pid70547,Dell Inspiron,A versatile range of Dell laptops.,800,2,Black
+pid62235,HP Pavilion,A popular series of HP laptops.,1000,2.2,Silver
+pid39202,HP Envy,A premium line of HP laptops.,1200,2.3,Dark Ash Silver
+pid76379,Lenovo ThinkPad X1,A flagship business laptop by Lenovo.,1800,2.9,Black
