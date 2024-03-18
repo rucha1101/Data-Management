@@ -113,6 +113,8 @@ if(file.exists(categories_path) && file.exists(products_path)) {
   stop("One or both of the required CSV files do not exist.")
 }
 
+
+
 # working ig
 # categories_path <- "data_upload/categories.csv"
 # products_path <- "data_upload/products.csv"
