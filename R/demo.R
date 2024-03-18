@@ -127,7 +127,7 @@ if(file.exists(categories_path) && file.exists(products_path)) {
   missing_product_ids <- sqldf("SELECT c.product_id
                                 FROM categories_data c
                                 LEFT JOIN products_data p ON c.product_id = p.product_id
-                                WHERE p.product_id IS NOT NULL")
+                                WHERE p.product_id IS NULL")
 
   error_block <- if(nrow(missing_product_ids) > 0) {
     stop("There are product IDs in 'categories' that don't exist in 'products'. Data insertion halted.")
