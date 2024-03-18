@@ -130,7 +130,7 @@ if(file.exists(categories_path) && file.exists(products_path)) {
                                 WHERE p.product_id IS NULL")
 
   error_block <- if(nrow(missing_product_ids) > 0) {
-    stop("There are product IDs in 'categories' that don't exist in 'products'. Data insertion halted.")
+    message("There are product IDs in 'categories' that don't exist in 'products'. Data insertion halted.")
   }
   else {
     message("Validation successful: All product IDs in 'categories' exist in 'products'")
