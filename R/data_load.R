@@ -9,9 +9,9 @@ library(sqldf)
 library(dplyr)
 library(RColorBrewer)
 #install.packages("gganimate")
-library(gganimate)
+#library(gganimate)
 #install.packages('transformr')
-library(transformr)
+#library(transformr)
 
 
 
