@@ -1,3 +1,12 @@
+library(readr)
+library(RSQLite)
+library(dplyr)
+library(wordcloud) 
+#connect to the SQLite database
+my_connection <- RSQLite::dbConnect(RSQLite::SQLite(),"database.db")
+
+
+
 # Define minimum word frequency for inclusion
 min_freq <- 5
 
@@ -15,3 +24,6 @@ neutral_cloud <- wordcloud(words = reviews[reviews$rating == 3, "review_text"] %
 
 # Arrange the word clouds in a grid layout
 grid.arrange(positive_cloud, negative_cloud, neutral_cloud, nrow = 1)
+
+
+dbDisconnect(my_connection)

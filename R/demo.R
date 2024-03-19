@@ -52,17 +52,26 @@ display_table_counts(my_connection)
 
 
 # VALIDATION CODE
-Customers_path <- "data_upload/Customers.csv"
+customers_path <- "data_upload/customers.csv"
 shipment_path <- "data_upload/shipment.csv"
 transactiondetails_path  <- "data_upload/transactiondetails.csv"
 reviews_path <- "data_upload/reviews.csv"
 suppliers_path <- "data_upload/suppliers.csv"
 categories_path <- "data_upload/categories.csv"
 products_path <- "data_upload/products.csv"
+categories_data <- read_csv(categories_path, show_col_types = FALSE)
+products_data <- read_csv(products_path, show_col_types = FALSE)
+transactiondetails_data <- read_csv(transactiondetails_path, show_col_types = FALSE)
+reviews_data <- read_csv(reviews_path, show_col_types = FALSE)
+suppliers_data <- read_csv(suppliers_path, show_col_types = FALSE)
+customers_data <- read_csv(customers_path, show_col_types = FALSE)
+shipment_data <- read_csv(shipment_path, show_col_types = FALSE)
+
+
 
 if(file.exists(categories_path) && file.exists(products_path)) {
-  categories_data <- read_csv(categories_path, show_col_types = FALSE)
-  products_data <- read_csv(products_path, show_col_types = FALSE)
+  # categories_data <- read_csv(categories_path, show_col_types = FALSE)
+  # products_data <- read_csv(products_path, show_col_types = FALSE)
   
   # Using SQL query with sqldf
   missing_product_ids <- sqldf("SELECT c.product_id
@@ -80,5 +89,10 @@ if(file.exists(categories_path) && file.exists(products_path)) {
 }
 
 
+if (length(unique(customers_data$customer_id)) != nrow(customers_data)) {
+  stop("Customer IDs are not unique.")
+} else {
+  message("VALIDATION SUCCESSFUL: Customer IDs are unique.")
+}
 
 dbDisconnect(my_connection)
