@@ -63,11 +63,8 @@ create table suppliers (
     'supplier_address' text,
     'supplier_phone_number' text,
     'supplier_email' text,
-<<<<<<< HEAD
-	primary key (supplier_id,product_id)
-=======
->>>>>>> eb9bb465f1fd7b48cb6d80d0ea4c86ece807ddad
-    foreign key (product_id) references products(product_id)
+	primary key (supplier_id,product_id),
+  foreign key (product_id) references products(product_id)
 );
 ")
 
