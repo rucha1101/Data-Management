@@ -32,8 +32,8 @@ supplier_id,product_id,contact_name,supplier_address,supplier_phone_number,suppl
 01HRHEP0KA4J1YVCCW5MSBXY0V,pid70547,Tallia Ethersey,4997 Scoville Plaza,351-837-5364,tethersey1@slashdot.org
 01HRHEP0KA4J1YVCCW5MSBXY0V,pid10573,Tallia Ethersey,4997 Scoville Plaza,351-837-5364,tethersey1@slashdot.org
 01HRHEP0KA4J1YVCCW5MSBXY0V,pid39202,Tallia Ethersey,4997 Scoville Plaza,351-837-5364,tethersey1@slashdot.org
-01HRHEP0KCHJF83EG3JM8TZJK7,pid16700,Kacie Maggiore,1704 Mesta Crossing,414-708-0330,kmaggiore2@163.com
-01HRHEP0KCHJF83EG3JM8TZJK7,pid78374,Kacie Maggiore,1704 Mesta Crossing,414-708-0330,kmaggiore2@163.com
+01HRHEP0KCHJF83EG3JM8TZJK7,pid16700,Kacie Maggiore,1704 Mesta Crossing,414-708-0330,kmaggiore2@opera.com
+01HRHEP0KCHJF83EG3JM8TZJK7,pid78374,Kacie Maggiore,1704 Mesta Crossing,414-708-0330,kmaggiore2@opera.com
 01HRHEP0KF2YVCG42DBZHRP77V,pid01492,Agata Leitch,90 Rigney Trail,976-745-4905,aleitch3@mtv.com
 01HRHEP0KF2YVCG42DBZHRP77V,pid65473,Agata Leitch,90 Rigney Trail,976-745-4905,aleitch3@mtv.com
 01HRHEP0KF2YVCG42DBZHRP77V,pid18174,Agata Leitch,90 Rigney Trail,976-745-4905,aleitch3@mtv.com
@@ -56,13 +56,13 @@ supplier_id,product_id,contact_name,supplier_address,supplier_phone_number,suppl
 01HRHEP0KN6HEAWPD5RF6HSNY0,pid30100,Jannelle Gamlin,252 Browning Road,935-618-4455,jgamlin7@cafepress.com
 01HRHEP0KN6HEAWPD5RF6HSNY0,pid97581,Jannelle Gamlin,252 Browning Road,935-618-4455,jgamlin7@cafepress.com
 01HRHEP0KN6HEAWPD5RF6HSNY0,pid97863,Jannelle Gamlin,252 Browning Road,935-618-4455,jgamlin7@cafepress.com
-01HRHEP0KQ8D8NDBVB57AS9H0E,pid18174,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc2.com
-01HRHEP0KQ8D8NDBVB57AS9H0E,pid70547,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc2.com
-01HRHEP0KQ8D8NDBVB57AS9H0E,pid07178,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc2.com
-01HRHEP0KQ8D8NDBVB57AS9H0E,pid15345,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc2.com
-01HRHEP0KQ8D8NDBVB57AS9H0E,pid97863,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc2.com
-01HRHEP0KQ8D8NDBVB57AS9H0E,pid10573,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc2.com
-01HRHEP0KQ8D8NDBVB57AS9H0E,pid82265,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc2.com
+01HRHEP0KQ8D8NDBVB57AS9H0E,pid18174,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc.com
+01HRHEP0KQ8D8NDBVB57AS9H0E,pid70547,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc.com
+01HRHEP0KQ8D8NDBVB57AS9H0E,pid07178,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc.com
+01HRHEP0KQ8D8NDBVB57AS9H0E,pid15345,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc.com
+01HRHEP0KQ8D8NDBVB57AS9H0E,pid97863,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc.com
+01HRHEP0KQ8D8NDBVB57AS9H0E,pid10573,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc.com
+01HRHEP0KQ8D8NDBVB57AS9H0E,pid82265,Lewie Atkyns,0704 Starling Street,464-137-0713,latkyns8@fc.com
 01HRHEP0KRJ7WDCK4Z5QNN3P49,pid56082,Lyndsey O'Hickey,788 Scofield Alley,773-969-6968,lohickey9@shinystat.com
 01HRHEP0KRJ7WDCK4Z5QNN3P49,pid87323,Lyndsey O'Hickey,788 Scofield Alley,773-969-6968,lohickey9@shinystat.com
 01HRHEP0KRJ7WDCK4Z5QNN3P49,pid38287,Lyndsey O'Hickey,788 Scofield Alley,773-969-6968,lohickey9@shinystat.com
@@ -129,7 +129,7 @@ supplier_id,product_id,contact_name,supplier_address,supplier_phone_number,suppl
 01HRHEP0MFST85BYDXESDR7KM5,pid46855,Verena McNutt,3131 Hoepker Street,529-876-5567,vmcnuttm@weather.com
 01HRHEP0MHARWDGT0J8D76Q1WG,pid28340,Arvy Benthall,60 Glacier Hill Road,493-919-3386,abenthalln@wikia.com
 01HRHEP0MHARWDGT0J8D76Q1WG,pid62235,Arvy Benthall,60 Glacier Hill Road,493-919-3386,abenthalln@wikia.com
-01HRHEP0MKRMACPNTP891BAM53,pid01492,Gabie Spileman,955 Forest Lane,382-331-1453,gspilemano@4shared.com
+01HRHEP0MKRMACPNTP891BAM53,pid01492,Gabie Spileman,955 Forest Lane,382-331-1453,gspilemano@shared.com
 01HRHEP0MNZYEWXD03N403XQ88,pid17567,Merv Eisikovitsh,3029 Melvin Alley,911-465-7343,meisikovitshp@nyu.edu
 01HRHEP0MNZYEWXD03N403XQ88,pid88316,Merv Eisikovitsh,3029 Melvin Alley,911-465-7343,meisikovitshp@nyu.edu
 01HRHEP0MNZYEWXD03N403XQ88,pid55158,Merv Eisikovitsh,3029 Melvin Alley,911-465-7343,meisikovitshp@nyu.edu

@@ -5,7 +5,7 @@ library(ggplot2)
 library(sqldf)
 #library(tidyverse)
 #library(tidytext)
-library(gridExtra)
+#library(gridExtra)
 library(dplyr)
 library(RColorBrewer)
 #install.packages("gganimate")
@@ -59,6 +59,7 @@ display_table_counts <- function(connection) {
 
 # Display table counts
 display_table_counts(my_connection)
+
 
 
 # VALIDATION CODE
@@ -223,11 +224,11 @@ if (length(unique(paste(transactiondetails_data$transaction_id, transactiondetai
 
 #Referential Checks
 # Referential Integrity Check: Customer Existence in Transaction Detail
-# if (any(!transactiondetails_data$customer_id %in% customers_data$customer_id)) {
-#   stop("Invalid customer IDs in transaction_detail table!")
-# } else {
-#   message("Referential Integrity Checked: Customer Existence in Transaction Detail")
-# }
+if (any(!transactiondetails_data$customer_id %in% customers_data$customer_id)) {
+  stop("Invalid customer IDs in transaction_detail table!")
+} else {
+  message("Referential Integrity Checked: Customer Existence in Transaction Detail")
+}
 
 # Referential Integrity Check: Product Existence in Transaction Detail
 if (any(!transactiondetails_data$product_id %in% products_data$product_id)) {
@@ -244,11 +245,11 @@ if (any(!reviews_data$product_id %in% products_data$product_id)) {
 }
 
 # Referential Integrity Check: Customer Existence in Reviews
-# if (any(!reviews_data$customer_id %in% customers_data$customer_id)) {
-#   stop("Invalid customer IDs in reviews table!")
-# } else {
-#   message("Referential Integrity Checked: Customer Existence in Reviews")
-# }
+if (any(!reviews_data$customer_id %in% customers_data$customer_id)) {
+  stop("Invalid customer IDs in reviews table!")
+} else {
+  message("Referential Integrity Checked: Customer Existence in Reviews")
+}
 
 # Referential Integrity Check: Product Existence in Categories
 if (any(!categories_data$product_id %in% products_data$product_id)) {
@@ -296,12 +297,12 @@ if (!all(grepl("^\\S+@\\S+\\.\\S+$", customers_data$cx_email)) |
   message("VALIDATION SUCCESSFUL: Customer emails checked.")
 }
 
-# if (!all(grepl("^\\S+@\\S+\\.\\S+$", suppliers_data$supplier_email)) | 
-#     any(grepl("@.*[0-9]", suppliers_data$supplier_email))) {
-#   stop("Invalid email format in supplier data.")
-# } else {
-#   message("VALIDATION SUCCESSFUL: Supplier emails checked.")
-# }
+if (!all(grepl("^\\S+@\\S+\\.\\S+$", suppliers_data$supplier_email)) | 
+    any(grepl("@.*[0-9]", suppliers_data$supplier_email))) {
+  stop("Invalid email format in supplier data.")
+} else {
+  message("VALIDATION SUCCESSFUL: Supplier emails checked.")
+}
 
 # Check phone number format
 if (!all(grepl("^\\d{3}-\\d{3}-\\d{4}$", customers_data$cx_phone_number))) {
