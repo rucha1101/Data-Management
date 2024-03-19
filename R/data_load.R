@@ -25,7 +25,7 @@ RSQLite::dbExecute(my_connection,"
 	'gender' text,
 	'cx_address' text not null,
 	'sign_up_date' date,
-	'last_login_date' timestamp,
+	'last_login_date' date,
 	'date_of_birth' date,
 	'cx_phone_number' text not null   
     );
