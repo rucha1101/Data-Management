@@ -14,7 +14,6 @@ library(gganimate)
 #install.packages('transformr')
 library(transformr)
 
-<<<<<<< HEAD
 
 
 my_connection <- dbConnect(RSQLite::SQLite(), "database.db")
@@ -780,7 +779,7 @@ create table transactiondetails (
 dbGetQuery(my_connection, 
            sprintf("SELECT name FROM sqlite_master WHERE type='table';")
 )
->>>>>>> d014a583e74d20a518f7c018bea647152f1cf03c
+
 
 dbDisconnect(my_connection)
 
