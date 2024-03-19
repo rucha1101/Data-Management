@@ -114,20 +114,20 @@ data_frame_names <- c("categories_data", "products_data", "transactiondetails_da
 # }
 
 # Loop through each data frame
-for (i in seq_along(data_frames)) {
-  # Perform security checks on each column
-  for (col in colnames(data_frames[[i]])) {
-    # Check for SQL injection
-    if (!all(sapply(data_frames[[i]][[col]], check_sql_injection))) {
-      cat("SQL injection detected in column:", col, "of", data_frame_names[i], "\n")
-    }
-    
-    # Check for XSS prevention
-    if (!all(sapply(data_frames[[i]][[col]], check_xss_prevention))) {
-      cat("XSS vulnerability detected in column:", col, "of", data_frame_names[i], "\n")
-    }
-  }
-}
+# for (i in seq_along(data_frames)) {
+#   # Perform security checks on each column
+#   for (col in colnames(data_frames[[i]])) {
+#     # Check for SQL injection
+#     if (!all(sapply(data_frames[[i]][[col]], check_sql_injection))) {
+#       cat("SQL injection detected in column:", col, "of", data_frame_names[i], "\n")
+#     }
+#     
+#     # Check for XSS prevention
+#     if (!all(sapply(data_frames[[i]][[col]], check_xss_prevention))) {
+#       cat("XSS vulnerability detected in column:", col, "of", data_frame_names[i], "\n")
+#     }
+#   }
+# }
 
 
 
@@ -665,5 +665,6 @@ ggplot(combo_graph, aes(x=parent_cat_desc, y = num_transactions, fill = gender))
 # pcid1600	Telephony
 # pcid1700	Furniture
 
+#Disconnecting database connection
 dbDisconnect(my_connection)
 
