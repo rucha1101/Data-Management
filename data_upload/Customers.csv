@@ -1,4 +1,4 @@
-﻿customer_id,cx_name,cx_email,gender,cx_address,sign_up_date,last_login_date,date_of_birth,cx_phone_number
+customer_id,cx_name,cx_email,gender,cx_address,sign_up_date,last_login_date,date_of_birth,cx_phone_number
 cid85200,Gloriane Baterip,gbaterip0@cnbc.com,Female,0154 Arrowood Park,06-01-2020,1/26/2020,01-09-2000,952-913-2249
 cid48301,Zandra Huckell,zhuckell1@soup.io,Male,1 Northport Crossing,05-05-2020,2/28/2020,10/14/1955,832-886-8283
 cid84851,Bess Midner,bmidner2@umich.edu,Female,8 Carioca Alley,12-09-2020,02-10-2020,12/30/2001,594-123-2343
@@ -46,6 +46,3 @@ cid15085,Emmalee Archibald,earchibald17@reference.com,Male,819 Dennis Terrace,03
 cid79560,Gisela McIlvaney,gmcilvaney18@topsy.com,Male,4542 Sugar Point,12/31/2020,1/22/2020,6/15/2000,425-239-4716
 cid98436,Renee Paoletti,rpaoletti19@cbsnews.com,Female,7 Village Green Hill,1/31/2020,2/25/2020,12/31/2005,154-113-5006
 cid05128,Dulcy Barber,dbarber1a@friendfeed.com,Female,1375 Manufacturers Court,11/17/2020,2/25/2020,9/30/2003,114-464-6001
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
