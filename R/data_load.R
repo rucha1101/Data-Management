@@ -567,7 +567,10 @@ ggplot(top_rated_products, aes(x = reorder(product_name, average_rating), y = av
 ### Revenue and Products Purchased Per Day 
 
 # Join tables 
-tran_prod<- left_join(x=transactions,y=products, by = join_by(product_id == product_id))
+# tran_prod<- left_join(x=transactions,y=products, by = join_by(product_id == product_id))
+
+tran_prod <- left_join(x = transactions, y = products, by = "product_id")
+
 
 # Summarize data based on joint table
 
