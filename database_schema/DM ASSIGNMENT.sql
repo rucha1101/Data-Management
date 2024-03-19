@@ -1,94 +1,85 @@
--- creating table 'customers'
-CREATE TABLE customers
-(
-  customer_id TEXT PRIMARY KEY,
-  cx_name TEXT,
-  cx_email TEXT NOT NULL,
-  gender TEXT,
-  cx_address TEXT NOT NULL,
-  sign_up_date    DATE,
-  last_login_date DATE,
-  date_of_birth   DATE,
-  cx_phone_number TEXT NOT NULL
+-- Customers table: stores basic information about customers.
+CREATE TABLE 'customers' (
+    'customer_id' text PRIMARY KEY,
+	'cx_name' text,
+	'cx_email' text not null,
+	'gender' text,
+	'cx_address' text not null,
+	'sign_up_date' date,
+	'last_login_date' date,
+	'date_of_birth' date,
+	'cx_phone_number' text not nulls
 );
 
--- creating table 'shipment'
-CREATE TABLE shipment
-(
-  shipment_id TEXT PRIMARY KEY,
-  transaction_id TEXT NOT NULL,
-  shipment_date DATE NOT NULL,
-  shipment_phone_number TEXT NOT NULL,
-  shipment_address TEXT NOT NULL,
-  shipment_city TEXT NOT NULL,
-  shipment_state TEXT,
-  shipment_zip_code TEXT,
-  shipment_country TEXT,
-  FOREIGN KEY (transaction_id) REFERENCES transaction_detail(transaction_id)
+-- Products table: contains details of the products.
+CREATE TABLE 'products' (
+	'product_id' text PRIMARY KEY,
+    'product_name' text not null,
+    'description' text,
+    'price' real,
+    'weight' real,
+    'color' text
 );
 
--- creating table 'suppliers'
-CREATE TABLE suppliers
-(
-  supplier_id TEXT PRIMARY KEY,
-  product_id TEXT NOT NULL,
-  company_name TEXT,
-  contact_name TEXT,
-  supplier_address TEXT,
-  supplier_phone_number TEXT,
-  supplier_email TEXT,
-  website TEXT,
-  FOREIGN KEY (product_id) REFERENCES products(product_id)
+-- Shipment table: records shipment details for transactions.
+CREATE TABLE shipment (
+    'shipment_id' text not null,
+    'transaction_id' text PRIMARY KEY,
+    'shipment_date' date not null,
+    'shipment_phone_number' text not null,
+    'shipment_address' text not null,
+    'shipment_city' text not null,
+    'shipment_state' text,
+    'shipment_zip_code' text,
+    'shipment_country' text
 );
 
--- creating table 'categories'
-CREATE TABLE categories
-(
-  category_id TEXT PRIMARY KEY,
-  category_name TEXT,
-  category_description TEXT,
-  parent_category_id TEXT,
-  product_id TEXT NOT NULL,
-  FOREIGN KEY (parent_category_id) REFERENCES categories(category_id) FOREIGN KEY (product_id) REFERENCES products(product_id)
+-- Suppliers table: links suppliers with the products they supply.
+CREATE TABLE suppliers (
+    'supplier_id' text not null,
+    'product_id' text not null,
+    'contact_name' text,
+    'supplier_address' text,
+    'supplier_phone_number' text,
+    'supplier_email' text,
+    PRIMARY KEY (supplier_id, product_id),
+    FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
 
--- creating table 'products'
-CREATE TABLE products
-(
-  product_id TEXT PRIMARY KEY,
-  product_name TEXT NOT NULL,
-  description TEXT,
-  price  REAL,
-  weight REAL,
-  color TEXT,
-  material TEXT
+-- Categories table: categorizes products.
+CREATE TABLE categories (
+    'category_id' text not null,
+    'category_name' text,
+    'category_description' text,
+    'parent_category_id' text,
+    'product_id' text PRIMARY KEY
 );
 
--- creating table 'reviews'
-CREATE TABLE reviews
-(
-  review_id TEXT PRIMARY KEY,
-  product_id TEXT NOT NULL,
-  customer_id TEXT NOT NULL,
-  rating INTEGER,
-  review_text TEXT,
-  review_date DATE,
-  FOREIGN KEY (product_id) REFERENCES products(product_id),
-  FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+-- Reviews table: stores customer reviews for products.
+CREATE TABLE reviews (
+    'review_id' text PRIMARY KEY,
+    'product_id' text not null,
+    'customer_id' text not null,
+    'rating' integer,
+    'review_text' text,
+    'review_date' date,
+    FOREIGN KEY (product_id) REFERENCES products(product_id),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
--- creating table 'transaction_detail'
-CREATE TABLE transaction_detail (
-    transaction_id TEXT PRIMARY KEY,
-    customer_id TEXT NOT NULL,
-    product_id TEXT NOT NULL,
-    quantity INTEGER,
-    discount REAL,
-    total_price REAL,
-	transaction_date DATE,
-    payment_method TEXT,
-    currency TEXT,
-    payment_processor TEXT,
+-- TransactionDetails table: details of transactions made by customers.
+CREATE TABLE transactiondetails (
+    'transaction_id' text not null,
+    'customer_id' text not null,
+    'transaction_date' date,
+    'payment_method' text,
+    'currency' text,
+    'payment_processor' text,
+    'product_id' text not null,
+    'quantity' integer,
+    'discount' real,
+    'total_price' real,
+    PRIMARY KEY (transaction_id, customer_id, product_id),
     FOREIGN KEY (product_id) REFERENCES products(product_id),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );

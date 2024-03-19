@@ -3,7 +3,7 @@ library(readr)
 library(RSQLite)
 library(ggplot2)
 library(sqldf)
-library(tidyverse)
+#library(tidyverse)
 #library(tidytext)
 #library(gridExtra)
 library(dplyr)
@@ -92,27 +92,26 @@ check_sql_injection <- function(input_data) {
   forbidden_keywords <- c("SELECT", "INSERT", "UPDATE", "DELETE", "DROP", "ALTER", "CREATE", "TRUNCATE", "UNION", "JOIN", "FROM", "WHERE")
   
   # Check if input contains any forbidden keywords
-  if (any(str_detect(tolower(input_data), paste0("\\b", forbidden_keywords, "\\b")))) {
+  if (any(sapply(forbidden_keywords, function(x) grepl(paste0("\\b", x, "\\b"), tolower(input_data), perl = TRUE)))) {
     return(FALSE) # SQL injection detected
   } else {
     return(TRUE) # No SQL injection detected
   }
 }
 
-# Function to check for XSS (Cross-Site Scripting) prevention
-check_xss_prevention <- function(input_data) {
-  # Define a list of HTML tags and attributes to block
-  forbidden_tags <- c("script", "iframe", "img", "onload", "onerror", "onclick", "onmouseover", "onmouseout")
+
+# Check if input contains any forbidden tags or attributes
+check_xss_vulnerability <- function(input_data) {
+  # Define a list of forbidden tags
+  forbidden_tags <- c("script", "img", "link", "iframe", "audio", "video", "source", "track", "object", "embed", "param", "meta", "style", "base", "bgsound", "blink", "body", "frame", "frameset", "head", "html", "ilayer", "layer", "title", "xml")
   
-  # Check if input contains any forbidden tags or attributes
-  if (any(str_detect(tolower(input_data), paste0("<", forbidden_tags, ">")))) {
+  # Check if input contains any forbidden tags
+  if (any(sapply(forbidden_tags, function(x) grepl(paste0("<", x, ">"), tolower(input_data), perl = TRUE)))) {
     return(FALSE) # XSS vulnerability detected
   } else {
-    return(TRUE) # No XSS vulnerability detected
+    return(TRUE) # No XSS vulnerability detected
   }
 }
-
-
 
 # Loop through each data frame
 for (i in seq_along(data_frames)) {
