@@ -18,8 +18,8 @@ for (table in tables) {
 }
 
 RSQLite::dbExecute(my_connection,"
-  CREATE TABLE 'Customers' (
-    'customer_id' VARCHAR(4) PRIMARY KEY,
+  CREATE TABLE 'customers' (
+    'customer_id' text PRIMARY KEY,
 	'cx_name' text,
 	'cx_email' text not null,
 	'gender' text,
@@ -38,8 +38,7 @@ RSQLite::dbExecute(my_connection,"
     'description' text,
     'price' real,
     'weight' real,
-    'color' text,
-    'material' text  
+    'color' text,  
     );
 ")
 RSQLite::dbExecute(my_connection,"
@@ -61,12 +60,10 @@ RSQLite::dbExecute(my_connection,"
 create table suppliers (
     'supplier_id' text primary key,
     'product_id' text not null,
-    'company_name' text,
     'contact_name' text,
     'supplier_address' text,
     'supplier_phone_number' text,
     'supplier_email' text,
-    'website' text,
     foreign key (product_id) references products(product_id)
 );
 ")
