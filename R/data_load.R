@@ -38,7 +38,7 @@ RSQLite::dbExecute(my_connection,"
     'description' text,
     'price' real,
     'weight' real,
-    'color' text,  
+    'color' text  
     );
 ")
 RSQLite::dbExecute(my_connection,"
