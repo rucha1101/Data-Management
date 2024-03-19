@@ -88,11 +88,57 @@ if(file.exists(categories_path) && file.exists(products_path)) {
   }
 }
 
-
+# Data Integrity Checks
+# Check for unique customer IDs
 if (length(unique(customers_data$customer_id)) != nrow(customers_data)) {
-  stop("Customer IDs are not unique.")
+  stop(paste("Customer IDs are not unique."))
 } else {
-  message("VALIDATION SUCCESSFUL: Customer IDs are unique.")
+  message("VALIDATION SUCCESSFUL: Customer IDs are unique")
 }
+
+
+# Check for unique product IDs
+if (length(unique(products_data$product_id)) != nrow(products_data)) {
+  stop(paste("Product IDs are not unique."))
+} else {
+  message("VALIDATION SUCCESSFUL: Product_IDs are unique")
+}
+
+
+# Check for unique product IDs in category table
+if (length(unique(categories_data$product_id)) != nrow(categories_data)) {
+  stop(paste("Product IDs are not unique in category table"))
+} else {
+  message("VALIDATION SUCCESSFUL: Product_IDs are unique in category table")
+}
+
+# Check for Shipment Transaction IDs
+if (length(unique(shipment_data$transaction_id)) != nrow(shipment_data)) {
+  stop(paste("Shipment data primary key not unique"))
+} else {
+  message("VALIDATION SUCCESSFUL: Shipment data primary key is unique")
+}
+
+# Check for Supplier Primary Key
+if (length(unique(paste(suppliers_data$supplier_id, suppliers_data$product_id))) != nrow(suppliers_data)) {
+  stop(paste("Supplier data primary key not unique"))
+} else {
+  message("VALIDATION SUCCESSFUL: Supplier data primary key is unique")
+}
+
+# Check for Shipment Transaction IDs
+if (length(unique(reviews_data$review_id)) != nrow(reviews_data)) {
+  stop(paste("Review IDs are not unique"))
+} else {
+  message("VALIDATION SUCCESSFUL: Review IDs are unique")
+}
+
+# Check for Transactiondetail Primary Key
+if (length(unique(paste(transactiondetails_data$transaction_id, transactiondetails_data$customer_id, transactiondetails_data$product_id))) != nrow(transactiondetails_data)) {
+  stop(paste("Transaction data primary key not unique"))
+} else {
+  message("VALIDATION SUCCESSFUL: Transaction data primary key is unique")
+}
+
 
 dbDisconnect(my_connection)
