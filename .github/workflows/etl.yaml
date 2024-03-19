@@ -24,13 +24,13 @@ jobs:
       - name: Install packages
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          Rscript -e 'install.packages(c("ggplot2","dplyr","readr","RSQLite","sqldf"))'
+          Rscript -e 'install.packages(c("ggplot2","dplyr","readr","RSQLite","sqldf","stringr"))'
       - name: Execute R script
         run: |
-          Rscript R/data_load.R
+          Rscript R/schema_creation.R
       - name: Execute R script ins
         run: |
-          Rscript R/demo.R
+          Rscript R/data_load.R
       - name: Add files
         run: |
           git config --global user.email "rucha.khartadkar123@gmail.com"
