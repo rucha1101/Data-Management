@@ -18,8 +18,8 @@ for (table in tables) {
 }
 
 RSQLite::dbExecute(my_connection,"
-  CREATE TABLE 'Customers' (
-    'customer_id' VARCHAR(4) PRIMARY KEY,
+  CREATE TABLE 'customers' (
+    'customer_id' text PRIMARY KEY,
 	'cx_name' text,
 	'cx_email' text not null,
 	'gender' text,
@@ -38,48 +38,43 @@ RSQLite::dbExecute(my_connection,"
     'description' text,
     'price' real,
     'weight' real,
-    'color' text,
-    'material' text  
+    'color' text  
     );
 ")
 RSQLite::dbExecute(my_connection,"
 create table shipment (
-    'shipment_id' text primary key,
-    'transaction_id' text not null,
+    'shipment_id' text not null,
+    'transaction_id' text primary key,
     'shipment_date' date not null,
     'shipment_phone_number' text not null,
     'shipment_address' text not null,
     'shipment_city' text not null,
     'shipment_state' text,
     'shipment_zip_code' text,
-    'shipment_country' text,
-    foreign key (transaction_id) references transaction_detail(transaction_id)
+    'shipment_country' text
 );
 ")
 
 RSQLite::dbExecute(my_connection,"
 create table suppliers (
-    'supplier_id' text primary key,
+    'supplier_id' text not null,
     'product_id' text not null,
-    'company_name' text,
     'contact_name' text,
     'supplier_address' text,
     'supplier_phone_number' text,
     'supplier_email' text,
-    'website' text,
+	primary key (supplier_id,product_id)
     foreign key (product_id) references products(product_id)
 );
 ")
 
 RSQLite::dbExecute(my_connection,"
 create table categories (
-    'category_id' text primary key,
+    'category_id' text not null,
     'category_name' text,
     'category_description' text,
     'parent_category_id' text,
-	'product_id' text not null,
-    foreign key (parent_category_id) references categories(category_id)
-	foreign key (product_id) references products(product_id)
+	  'product_id' text primary key
 );
 ")
 
@@ -96,18 +91,20 @@ create table reviews (
 );
 ")
 
+
 RSQLite::dbExecute(my_connection,"
 create table transactiondetails (
-    'transaction_id' text primary key,
+    'transaction_id' text not null,
     'customer_id' text not null,
+    'transaction_date' date,
+    'payment_method' text,
+    'currency' text,
+    'payment_processor' text,
     'product_id' text not null,
     'quantity' integer,
     'discount' real,
     'total_price' real,
-	'transaction_date' date,
-    'payment_method' text,
-    'currency' text,
-    'payment_processor' text,
+    	primary key(transaction_id,customer_id,product_id),
     foreign key (product_id) references products(product_id),
     foreign key (customer_id) references customers(customer_id)
 );
@@ -120,4 +117,3 @@ dbGetQuery(my_connection,
 )
 
 dbDisconnect(my_connection)
-

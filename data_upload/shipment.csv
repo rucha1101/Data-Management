@@ -1,51 +1,151 @@
 shipment_id,transaction_id,shipment_date,shipment_phone_number,shipment_address,shipment_city,shipment_state,shipment_zip_code,shipment_country
-1d60be3b-f25b-46f9-8569-1f69d172bc91,tid34371,5/19/2020,502-193-0942,9819 Elgar Plaza,Louisville,Kentucky,40233,United States
-4f01f8eb-b520-45c5-8151-3857af889468,tid11753,2/8/2021,303-801-4926,0971 Sunnyside Circle,Denver,Colorado,80255,United States
-b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid85732,4/10/2021,804-660-2855,8047 Pleasure Hill,Richmond,Virginia,23203,United States
-38c4ac53-7495-46e8-b3ad-f3f098705e7a,tid13619,2/3/2019,208-957-5049,096 Eagan Street,Boise,Idaho,83705,United States
-20aea2d1-c504-4506-a137-7768e119013d,tid09376,1/15/2022,559-345-9965,77530 Stoughton Court,Fresno,California,93778,United States
-11cbea65-22af-47d4-9cd0-81b0bbf4245d,tid58335,11/15/2017,858-353-0153,72844 Larry Center,San Francisco,California,94121,United States
-49de4e00-6157-4f41-8437-77d64c292ea7,tid48852,9/11/2023,314-680-3011,913 Rowland Place,Saint Louis,Missouri,63169,United States
-6ff08734-efc7-4900-9613-886a2e013f63,tid39496,7/27/2021,254-616-0813,2518 Dunning Road,Killeen,Texas,76544,United States
-a14d06a9-5adf-4d21-aa36-7488e2a48a31,tid22908,5/29/2021,302-622-1559,99035 Hallows Terrace,Wilmington,Delaware,19805,United States
-66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid95351,8/16/2019,305-273-4704,1 Grasskamp Hill,Miami,Florida,33261,United States
-ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid87673,5/23/2018,414-353-0352,11 Merry Street,Milwaukee,Wisconsin,53220,United States
-179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid87831,2/2/2020,903-318-8090,2 Rowland Center,Longview,Texas,75605,United States
-ba830f79-be4b-4d83-a366-014a3bd50d87,tid16239,12/11/2018,801-702-6919,2 Lakewood Gardens Hill,Salt Lake City,Utah,84140,United States
-e424baee-9504-42dd-a931-9316f5ef484c,tid65697,9/17/2019,334-983-3294,92706 Mayfield Parkway,Montgomery,Alabama,36134,United States
-61d3d224-cc10-44d0-a03c-4309a556d501,tid53060,7/9/2020,503-310-3110,1 Ramsey Plaza,Portland,Oregon,97232,United States
-6ff08734-efc7-4900-9613-886a2e013f63,tid93533,1/12/2017,832-518-8292,276 Kim Place,Katy,Texas,77493,United States
-49de4e00-6157-4f41-8437-77d64c292ea7,tid02478,11/22/2017,423-962-4432,56311 Lakewood Trail,Chattanooga,Tennessee,37405,United States
-6ff08734-efc7-4900-9613-886a2e013f63,tid45249,3/8/2018,559-761-3387,41 Annamark Drive,Fresno,California,93726,United States
-bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid84917,4/15/2021,315-516-0512,1239 Bunker Hill Lane,Syracuse,New York,13251,United States
-2dc93d41-f8ed-432a-8342-f893a07f6274,tid82066,7/14/2018,704-372-1116,93 Truax Park,Charlotte,North Carolina,28263,United States
-6ff08734-efc7-4900-9613-886a2e013f63,tid10103,6/21/2021,801-411-5164,0 Larry Street,Ogden,Utah,84409,United States
-40618127-d7e6-45c8-8bd4-0d9d27df099e,tid95192,6/20/2023,254-492-9941,7 Northridge Trail,Temple,Texas,76505,United States
-61d3d224-cc10-44d0-a03c-4309a556d501,tid73313,6/18/2020,903-140-7776,889 Mayer Terrace,Longview,Texas,75605,United States
-44593b06-bac7-4f75-931d-1f583fd78391,tid45620,11/22/2021,212-271-2899,3 Pond Place,New York City,New York,10150,United States
-b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid44476,5/4/2023,407-592-1522,38219 Westport Hill,Daytona Beach,Florida,32118,United States
-ef311a5d-d69c-4abc-b688-606a246a16cb,tid20052,4/11/2018,215-546-8574,86 Forster Drive,Philadelphia,Pennsylvania,19109,United States
-cbcfadba-5012-4ff2-8b10-fc6a3c9e25b3,tid53920,10/16/2021,612-324-6332,1657 2nd Avenue,Minneapolis,Minnesota,55402,United States
-ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid66460,8/7/2017,973-611-2825,4735 Milwaukee Alley,Newark,New Jersey,7104,United States
-2dc93d41-f8ed-432a-8342-f893a07f6274,tid06927,11/20/2019,949-725-5027,0 Amoth Pass,Santa Ana,California,92705,United States
-b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid37725,10/2/2023,202-193-5137,05096 Mallard Drive,Washington,District of Columbia,20046,United States
-66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid45414,7/18/2022,850-955-8905,08 Arizona Point,Tallahassee,Florida,32309,United States
-b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid93458,2/28/2024,616-614-5264,621 Kenwood Lane,Grand Rapids,Michigan,49518,United States
-1dcc46c5-ecc8-4ca1-bdd9-d91fb4e4bbc4,tid71062,8/26/2017,361-419-7498,226 Dwight Alley,Corpus Christi,Texas,78475,United States
-bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid93609,4/20/2022,309-975-8312,26 Eastwood Park,Bloomington,Illinois,61709,United States
-179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid49288,4/6/2023,901-167-7829,8826 Straubel Park,Memphis,Tennessee,38197,United States
-c1ddcf68-fd03-406b-8552-2aa186941db7,tid58910,8/31/2017,650-996-4726,00708 Onsgard Pass,Santa Clara,California,95054,United States
-66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid79805,12/1/2018,561-229-7318,569 Towne Place,West Palm Beach,Florida,33411,United States
-ed3e9c66-2029-4a5c-9110-a15ee28fe13d,tid10348,3/28/2020,970-213-4481,96 Utah Way,Grand Junction,Colorado,81505,United States
-179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid39440,12/6/2020,304-139-4899,14 Acker Alley,Huntington,West Virginia,25775,United States
-339d1af0-5df7-4fdd-bd3b-ad66d167f1d6,tid84301,9/22/2017,904-653-3354,00 Dakota Avenue,Jacksonville,Florida,32259,United States
-ba830f79-be4b-4d83-a366-014a3bd50d87,tid60587,10/12/2020,704-595-2982,03863 Pierstorff Avenue,Charlotte,North Carolina,28289,United States
-bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid65518,12/18/2023,712-882-9440,4 Independence Hill,Sioux City,Iowa,51105,United States
-d9dd186f-4b26-48f4-9228-e1efee277d5d,tid26865,11/16/2018,505-810-4387,24567 Truax Junction,Albuquerque,New Mexico,87180,United States
-5bd1dec6-7dad-4b53-b9b9-2f4725ebc276,tid86042,4/30/2017,571-890-2096,0310 Gale Circle,Alexandria,Virginia,22333,United States
-b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid15550,7/16/2018,215-134-3286,11 Merchant Place,Philadelphia,Pennsylvania,19146,United States
-bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid68176,5/29/2022,231-465-3424,8355 Morrow Alley,Muskegon,Michigan,49444,United States
-d7bd0570-5034-4747-bf56-5e32624cbc45,tid32978,3/1/2022,704-773-8987,29656 Lunder Road,Charlotte,North Carolina,28235,United States
-2dc93d41-f8ed-432a-8342-f893a07f6274,tid89573,10/31/2018,919-270-9911,56 Havey Hill,Durham,North Carolina,27705,United States
-20aea2d1-c504-4506-a137-7768e119013d,tid07022,10/13/2021,208-186-4484,914 Pleasure Circle,Pocatello,Idaho,83206,United States
-2dc93d41-f8ed-432a-8342-f893a07f6274,tid67550,4/24/2021,303-762-9575,04358 Schlimgen Parkway,Denver,Colorado,80223,United States
+1d60be3b-f25b-46f9-8569-1f69d172bc91,tid34371,02/06/2020,502-193-0942,9819 Elgar Plaza,Louisville,Kentucky,40233,United States
+4f01f8eb-b520-45c5-8151-3857af889468,tid11753,02/16/2020,303-801-4926,0971 Sunnyside Circle,Denver,Colorado,80255,United States
+b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid85732,02/08/2020,804-660-2855,8047 Pleasure Hill,Richmond,Virginia,23203,United States
+38c4ac53-7495-46e8-b3ad-f3f098705e7a,tid13619,02/15/2020,208-957-5049,096 Eagan Street,Boise,Idaho,83705,United States
+20aea2d1-c504-4506-a137-7768e119013d,tid09376,02/13/2020,559-345-9965,77530 Stoughton Court,Fresno,California,93778,United States
+11cbea65-22af-47d4-9cd0-81b0bbf4245d,tid58335,02/12/2020,858-353-0153,72844 Larry Center,San Francisco,California,94121,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid48852,02/13/2020,314-680-3011,913 Rowland Place,Saint Louis,Missouri,63169,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid39496,02/08/2020,254-616-0813,2518 Dunning Road,Killeen,Texas,76544,United States
+a14d06a9-5adf-4d21-aa36-7488e2a48a31,tid22908,02/08/2020,302-622-1559,99035 Hallows Terrace,Wilmington,Delaware,19805,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid95351,02/08/2020,305-273-4704,1 Grasskamp Hill,Miami,Florida,33261,United States
+ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid87673,02/16/2020,414-353-0352,11 Merry Street,Milwaukee,Wisconsin,53220,United States
+179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid87831,02/04/2020,903-318-8090,2 Rowland Center,Longview,Texas,75605,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid16239,02/10/2020,801-702-6919,2 Lakewood Gardens Hill,Salt Lake City,Utah,84140,United States
+e424baee-9504-42dd-a931-9316f5ef484c,tid65697,02/08/2020,334-983-3294,92706 Mayfield Parkway,Montgomery,Alabama,36134,United States
+61d3d224-cc10-44d0-a03c-4309a556d501,tid53060,02/08/2020,503-310-3110,1 Ramsey Plaza,Portland,Oregon,97232,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid93533,02/10/2020,832-518-8292,276 Kim Place,Katy,Texas,77493,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid02478,04/13/2020,423-962-4432,56311 Lakewood Trail,Chattanooga,Tennessee,37405,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid45249,04/04/2020,559-761-3387,41 Annamark Drive,Fresno,California,93726,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid84917,04/08/2020,315-516-0512,1239 Bunker Hill Lane,Syracuse,New York,13251,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid82066,04/12/2020,704-372-1116,93 Truax Park,Charlotte,North Carolina,28263,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid10103,04/06/2020,801-411-5164,0 Larry Street,Ogden,Utah,84409,United States
+40618127-d7e6-45c8-8bd4-0d9d27df099e,tid95192,04/14/2020,254-492-9941,7 Northridge Trail,Temple,Texas,76505,United States
+61d3d224-cc10-44d0-a03c-4309a556d501,tid73313,04/13/2020,903-140-7776,889 Mayer Terrace,Longview,Texas,75605,United States
+44593b06-bac7-4f75-931d-1f583fd78391,tid45620,04/12/2020,212-271-2899,3 Pond Place,New York City,New York,10150,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid44476,04/06/2020,407-592-1522,38219 Westport Hill,Daytona Beach,Florida,32118,United States
+ef311a5d-d69c-4abc-b688-606a246a16cb,tid20052,04/03/2020,215-546-8574,86 Forster Drive,Philadelphia,Pennsylvania,19109,United States
+cbcfadba-5012-4ff2-8b10-fc6a3c9e25b3,tid53920,04/05/2020,612-324-6332,1657 2nd Avenue,Minneapolis,Minnesota,55402,United States
+ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid66460,04/05/2020,973-611-2825,4735 Milwaukee Alley,Newark,New Jersey,7104,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid06927,04/08/2020,949-725-5027,0 Amoth Pass,Santa Ana,California,92705,United States
+b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid37725,04/13/2020,202-193-5137,05096 Mallard Drive,Washington,District of Columbia,20046,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid45414,04/14/2020,850-955-8905,08 Arizona Point,Tallahassee,Florida,32309,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid93458,04/13/2020,616-614-5264,621 Kenwood Lane,Grand Rapids,Michigan,49518,United States
+1dcc46c5-ecc8-4ca1-bdd9-d91fb4e4bbc4,tid71062,04/06/2020,361-419-7498,226 Dwight Alley,Corpus Christi,Texas,78475,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid93609,04/03/2020,309-975-8312,26 Eastwood Park,Bloomington,Illinois,61709,United States
+179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid49288,02/26/2020,901-167-7829,8826 Straubel Park,Memphis,Tennessee,38197,United States
+c1ddcf68-fd03-406b-8552-2aa186941db7,tid58910,02/23/2020,650-996-4726,00708 Onsgard Pass,Santa Clara,California,95054,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid79805,02/17/2020,561-229-7318,569 Towne Place,West Palm Beach,Florida,33411,United States
+ed3e9c66-2029-4a5c-9110-a15ee28fe13d,tid10348,02/28/2020,970-213-4481,96 Utah Way,Grand Junction,Colorado,81505,United States
+179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid39440,02/16/2020,304-139-4899,14 Acker Alley,Huntington,West Virginia,25775,United States
+339d1af0-5df7-4fdd-bd3b-ad66d167f1d6,tid84301,02/26/2020,904-653-3354,00 Dakota Avenue,Jacksonville,Florida,32259,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid60587,02/19/2020,704-595-2982,03863 Pierstorff Avenue,Charlotte,North Carolina,28289,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid65518,02/20/2020,712-882-9440,4 Independence Hill,Sioux City,Iowa,51105,United States
+d9dd186f-4b26-48f4-9228-e1efee277d5d,tid26865,02/19/2020,505-810-4387,24567 Truax Junction,Albuquerque,New Mexico,87180,United States
+5bd1dec6-7dad-4b53-b9b9-2f4725ebc276,tid86042,02/21/2020,571-890-2096,0310 Gale Circle,Alexandria,Virginia,22333,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid15550,02/16/2020,215-134-3286,11 Merchant Place,Philadelphia,Pennsylvania,19146,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid68176,02/18/2020,231-465-3424,8355 Morrow Alley,Muskegon,Michigan,49444,United States
+d7bd0570-5034-4747-bf56-5e32624cbc45,tid32978,02/06/2020,704-773-8987,29656 Lunder Road,Charlotte,North Carolina,28235,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid89573,02/07/2020,919-270-9911,56 Havey Hill,Durham,North Carolina,27705,United States
+20aea2d1-c504-4506-a137-7768e119013d,tid07022,02/03/2020,208-186-4484,914 Pleasure Circle,Pocatello,Idaho,83206,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid67550,01/30/2020,303-762-9575,04358 Schlimgen Parkway,Denver,Colorado,80223,United States
+339d1af0-5df7-4fdd-bd3b-ad66d167f1d6,tid72545,02/06/2020,677-999-9513,1 Grasskamp Hill,Denver,Utah,80255,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid32237,02/16/2020,288-347-1846,0971 Sunnyside Circle,Longview,Idaho,53220,United States
+d9dd186f-4b26-48f4-9228-e1efee277d5d,tid85744,02/08/2020,022-900-7246,92706 Mayfield Parkway,San Francisco,Florida,20046,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid30111,02/15/2020,493-718-8568,29656 Lunder Road,Philadelphia,North Carolina,32309,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid94183,02/13/2020,276-120-3066,0 Larry Street,Wilmington,California,22333,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid58118,02/12/2020,573-303-9435,914 Pleasure Circle,Sioux City,Michigan,75605,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid23365,02/13/2020,695-984-7997,93 Truax Park,Washington,Texas,75605,United States
+20aea2d1-c504-4506-a137-7768e119013d,tid47220,02/08/2020,921-380-6564,92706 Mayfield Parkway,New York City,Utah,13251,United States
+38c4ac53-7495-46e8-b3ad-f3f098705e7a,tid38511,02/08/2020,086-932-6772,24567 Truax Junction,Santa Ana,Texas,32309,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid44107,02/08/2020,692-634-6328,04358 Schlimgen Parkway,Daytona Beach,Idaho,28289,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid34288,02/16/2020,610-806-5893,24567 Truax Junction,Huntington,Florida,37405,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid65407,02/04/2020,096-711-3530,05096 Mallard Drive,Grand Rapids,Texas,83705,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid67473,02/10/2020,377-887-0064,2518 Dunning Road,Albuquerque,Wisconsin,93778,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid72229,02/08/2020,071-041-6996,86 Forster Drive,Charlotte,District of Columbia,80223,United States
+179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid51840,02/08/2020,894-507-0393,93 Truax Park,Memphis,Utah,77493,United States
+d9dd186f-4b26-48f4-9228-e1efee277d5d,tid56032,02/10/2020,029-703-1032,0 Amoth Pass,Fresno,New York,32309,United States
+b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid49572,04/13/2020,471-577-2374,56311 Lakewood Trail,Tallahassee,Texas,61709,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid61736,04/04/2020,431-319-6598,26 Eastwood Park,Corpus Christi,Pennsylvania,84140,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid52729,04/08/2020,707-677-0260,276 Kim Place,Louisville,Tennessee,49518,United States
+11cbea65-22af-47d4-9cd0-81b0bbf4245d,tid66298,04/12/2020,488-905-5562,2518 Dunning Road,Durham,Oregon,28235,United States
+20aea2d1-c504-4506-a137-7768e119013d,tid44108,04/06/2020,067-984-1879,11 Merry Street,Portland,Alabama,55402,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid65717,04/14/2020,385-310-0916,14 Acker Alley,Grand Rapids,Texas,94121,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid50109,04/13/2020,511-994-5249,096 Eagan Street,Washington,District of Columbia,80223,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid69442,04/12/2020,062-611-5730,04358 Schlimgen Parkway,Sioux City,Delaware,94121,United States
+ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid55163,04/06/2020,748-798-3613,77530 Stoughton Court,Salt Lake City,Pennsylvania,7104,United States
+339d1af0-5df7-4fdd-bd3b-ad66d167f1d6,tid50955,04/03/2020,463-655-6143,99035 Hallows Terrace,Syracuse,California,49444,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid88992,04/05/2020,508-530-4463,0310 Gale Circle,Denver,Minnesota,25775,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid66207,04/05/2020,279-516-8410,56 Havey Hill,Memphis,Pennsylvania,76505,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid13981,04/08/2020,367-924-5196,1657 2nd Avenue,Chattanooga,Tennessee,93726,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid22344,04/13/2020,652-030-0182,93 Truax Park,Jacksonville,District of Columbia,13251,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid50616,04/14/2020,603-248-1200,05096 Mallard Drive,Denver,Texas,83206,United States
+61d3d224-cc10-44d0-a03c-4309a556d501,tid23822,04/13/2020,530-429-9778,11 Merry Street,Philadelphia,Utah,19805,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid58791,04/06/2020,759-618-0174,8047 Pleasure Hill,Grand Junction,California,38197,United States
+5bd1dec6-7dad-4b53-b9b9-2f4725ebc276,tid22877,04/03/2020,670-081-5878,99035 Hallows Terrace,Charlotte,Idaho,76505,United States
+c1ddcf68-fd03-406b-8552-2aa186941db7,tid63569,02/26/2020,279-722-2707,226 Dwight Alley,Temple,North Carolina,92705,United States
+11cbea65-22af-47d4-9cd0-81b0bbf4245d,tid19257,02/23/2020,055-670-8426,7 Northridge Trail,West Palm Beach,North Carolina,40233,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid31318,02/17/2020,261-598-4764,72844 Larry Center,Boise,Virginia,32118,United States
+1d60be3b-f25b-46f9-8569-1f69d172bc91,tid69649,02/28/2020,960-579-7520,38219 Westport Hill,Santa Ana,North Carolina,7104,United States
+cbcfadba-5012-4ff2-8b10-fc6a3c9e25b3,tid34321,02/16/2020,885-198-1856,56311 Lakewood Trail,Milwaukee,Utah,13251,United States
+ed3e9c66-2029-4a5c-9110-a15ee28fe13d,tid15763,02/26/2020,661-739-3269,2518 Dunning Road,Saint Louis,Wisconsin,49444,United States
+ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid27177,02/19/2020,937-163-2549,03863 Pierstorff Avenue,Newark,Illinois,13251,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid41819,02/20/2020,171-016-5718,9819 Elgar Plaza,Alexandria,Florida,93778,United States
+20aea2d1-c504-4506-a137-7768e119013d,tid72347,02/19/2020,186-134-3054,913 Rowland Place,San Francisco,Michigan,76544,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid26582,02/21/2020,196-848-4126,621 Kenwood Lane,Grand Rapids,Utah,81505,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid53131,02/16/2020,714-321-1847,096 Eagan Street,Grand Rapids,Pennsylvania,83705,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid59956,02/18/2020,672-666-7422,889 Mayer Terrace,Louisville,Oregon,7104,United States
+339d1af0-5df7-4fdd-bd3b-ad66d167f1d6,tid66399,02/06/2020,951-107-9152,096 Eagan Street,Corpus Christi,Colorado,7104,United States
+d7bd0570-5034-4747-bf56-5e32624cbc45,tid56310,02/07/2020,408-900-1861,56 Havey Hill,Albuquerque,Missouri,76544,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid95007,02/03/2020,761-564-4491,226 Dwight Alley,Jacksonville,Idaho,76544,United States
+a14d06a9-5adf-4d21-aa36-7488e2a48a31,tid99028,01/30/2020,568-092-2739,0971 Sunnyside Circle,Grand Rapids,Utah,92705,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid80882,01/29/2020,577-430-7687,04358 Schlimgen Parkway,Bloomington,New Mexico,28235,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid35471,02/05/2020,866-515-6177,913 Rowland Place,Longview,Utah,92705,United States
+ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid68880,01/30/2020,955-464-9181,72844 Larry Center,Wilmington,Wisconsin,78475,United States
+5bd1dec6-7dad-4b53-b9b9-2f4725ebc276,tid17149,02/01/2020,340-021-0064,276 Kim Place,Katy,Utah,23203,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid84304,01/31/2020,988-222-3399,96 Utah Way,Montgomery,Utah,95054,United States
+e424baee-9504-42dd-a931-9316f5ef484c,tid96012,01/31/2020,263-079-6023,226 Dwight Alley,Montgomery,West Virginia,25775,United States
+40618127-d7e6-45c8-8bd4-0d9d27df099e,tid37977,01/26/2020,441-781-6494,04358 Schlimgen Parkway,Corpus Christi,Colorado,19146,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid28894,01/31/2020,677-914-0834,29656 Lunder Road,Killeen,Tennessee,84409,United States
+61d3d224-cc10-44d0-a03c-4309a556d501,tid40159,02/06/2020,120-677-6998,569 Towne Place,Daytona Beach,Texas,49444,United States
+4f01f8eb-b520-45c5-8151-3857af889468,tid80115,01/26/2020,915-462-9917,7 Northridge Trail,Richmond,Florida,32259,United States
+38c4ac53-7495-46e8-b3ad-f3f098705e7a,tid30042,02/02/2020,948-100-5443,56311 Lakewood Trail,Grand Junction,Utah,49444,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid28400,01/28/2020,959-723-1490,11 Merry Street,Syracuse,Virginia,33261,United States
+a14d06a9-5adf-4d21-aa36-7488e2a48a31,tid23962,02/06/2020,874-537-5626,26 Eastwood Park,Saint Louis,California,77493,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid63758,01/27/2020,746-950-2413,276 Kim Place,Miami,Florida,83206,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid25991,01/29/2020,112-558-4734,621 Kenwood Lane,New York City,Florida,37405,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid58107,03/11/2020,303-456-1253,29656 Lunder Road,Louisville,Idaho,95054,United States
+1d60be3b-f25b-46f9-8569-1f69d172bc91,tid72828,03/01/2020,715-211-9949,56311 Lakewood Trail,Daytona Beach,Missouri,25775,United States
+b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid69978,03/09/2020,016-100-1291,1 Grasskamp Hill,Muskegon,Colorado,84140,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid28112,03/08/2020,182-059-0278,29656 Lunder Road,Albuquerque,District of Columbia,76505,United States
+e424baee-9504-42dd-a931-9316f5ef484c,tid80660,03/08/2020,751-730-0420,889 Mayer Terrace,Ogden,West Virginia,76544,United States
+179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid79101,03/05/2020,468-062-6892,92706 Mayfield Parkway,Ogden,Virginia,77493,United States
+ff6b9ac6-49b2-4cbe-be68-fe3b8bee9e83,tid37790,03/04/2020,976-461-1561,914 Pleasure Circle,Memphis,New York,53220,United States
+20aea2d1-c504-4506-a137-7768e119013d,tid37332,02/22/2020,661-795-7409,56311 Lakewood Trail,San Francisco,District of Columbia,40233,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid76160,03/02/2020,358-995-2739,0 Larry Street,Grand Rapids,West Virginia,32309,United States
+1dcc46c5-ecc8-4ca1-bdd9-d91fb4e4bbc4,tid59273,03/06/2020,304-273-2439,4 Independence Hill,Chattanooga,Florida,36134,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid49971,02/26/2020,438-513-0544,24567 Truax Junction,Longview,Utah,28263,United States
+20aea2d1-c504-4506-a137-7768e119013d,tid48205,03/05/2020,181-363-3201,4735 Milwaukee Alley,Saint Louis,California,78475,United States
+5bd1dec6-7dad-4b53-b9b9-2f4725ebc276,tid13690,03/03/2020,436-414-0925,11 Merchant Place,Portland,Michigan,80255,United States
+b04c5e74-549c-466e-83ba-5fb669fc5b0f,tid44537,02/28/2020,133-931-0451,2 Rowland Center,Richmond,Tennessee,28235,United States
+b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid62151,02/27/2020,385-658-4121,0 Amoth Pass,Durham,Oregon,32259,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid58789,02/27/2020,037-711-0965,92706 Mayfield Parkway,Tallahassee,Alabama,76505,United States
+d7bd0570-5034-4747-bf56-5e32624cbc45,tid66852,02/24/2020,648-785-9798,29656 Lunder Road,Daytona Beach,Colorado,75605,United States
+b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid70181,02/29/2020,044-218-2599,92706 Mayfield Parkway,Bloomington,West Virginia,22333,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid35973,02/07/2020,338-658-9425,0 Amoth Pass,Charlotte,New York,84409,United States
+179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid66922,02/14/2020,203-300-9590,889 Mayer Terrace,Philadelphia,Minnesota,36134,United States
+ef311a5d-d69c-4abc-b688-606a246a16cb,tid22151,02/14/2020,976-861-4992,1239 Bunker Hill Lane,Chattanooga,Texas,19805,United States
+179b313e-ef1b-4cbe-bdd8-cb9f5ffc2ddb,tid20348,02/08/2020,243-138-1908,24567 Truax Junction,Katy,Virginia,95054,United States
+e424baee-9504-42dd-a931-9316f5ef484c,tid84815,02/14/2020,879-163-9710,96 Utah Way,Katy,Florida,83705,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid47284,02/10/2020,181-716-5549,569 Towne Place,Albuquerque,California,76544,United States
+ba830f79-be4b-4d83-a366-014a3bd50d87,tid44992,02/12/2020,983-392-8478,11 Merry Street,Charlotte,Florida,32309,United States
+b5c14638-ae3b-40d6-8e54-bbcd22e99258,tid26123,02/12/2020,302-262-3665,72844 Larry Center,Grand Junction,Texas,61709,United States
+6ff08734-efc7-4900-9613-886a2e013f63,tid46697,02/15/2020,326-592-0095,1 Ramsey Plaza,Miami,Kentucky,76544,United States
+cbcfadba-5012-4ff2-8b10-fc6a3c9e25b3,tid95562,02/07/2020,341-167-2484,14 Acker Alley,Charlotte,Texas,51105,United States
+66954d25-8f6d-4510-8fe3-a1972d4d5ec7,tid92888,02/10/2020,638-525-2526,99035 Hallows Terrace,Muskegon,Utah,61709,United States
+c1ddcf68-fd03-406b-8552-2aa186941db7,tid72331,02/07/2020,748-551-5515,2 Lakewood Gardens Hill,Denver,Kentucky,81505,United States
+4f01f8eb-b520-45c5-8151-3857af889468,tid17115,02/05/2020,840-301-6652,11 Merchant Place,Albuquerque,New York,76544,United States
+1d60be3b-f25b-46f9-8569-1f69d172bc91,tid97085,12/03/2020,532-218-3338,1 Grasskamp Hill,Sioux City,Colorado,36134,United States
+2dc93d41-f8ed-432a-8342-f893a07f6274,tid88310,12/05/2020,611-740-1651,8355 Morrow Alley,Tallahassee,Texas,49444,United States
+bb07fc79-cd5f-46cf-8f43-55deec87c60f,tid57750,12/03/2020,414-370-2291,08 Arizona Point,Longview,Idaho,81505,United States
+49de4e00-6157-4f41-8437-77d64c292ea7,tid38632,03/05/2020,421-087-8710,93 Truax Park,Grand Rapids,Florida,25775,United States
