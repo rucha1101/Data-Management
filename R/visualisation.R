@@ -44,7 +44,7 @@ ggplot(transactions, aes(x = payment_category, fill = payment_method, y = total_
  
   
   # Create a filename with the plot name and the current date
-  plot_name <- "rypm"
+  plot_name <- "rypm "
 date_string <- format(Sys.Date(), "%Y%m%d")
 filename <- paste0("figures/", plot_name, "_", date_string, ".jpg")
 
