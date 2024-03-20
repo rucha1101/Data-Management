@@ -366,13 +366,13 @@ if (any(as.Date(reviews_data$review_date, "%m/%d/%Y") >= current_date)) {
   message("VALIDATION SUCCESSFUL: Review dates checked.")
 }
                   
-#Checking for transaction dates in the future
-#current_date <- Sys.Date()
-#if (any(as.Date(transactiondetails_data$transaction_date, "%m/%d/%Y") >= current_date)) {
-#  stop("Invalid dates: Transaction date is in the future.")
-#} else {
-#  message("VALIDATION SUCCESSFUL: Transaction dates checked.")
-#}
+Checking for transaction dates in the future
+current_date <- Sys.Date()
+if (any(as.Date(transactiondetails_data$transaction_date, "%m/%d/%Y") >= current_date)) {
+  stop("Invalid dates: Transaction date is in the future.")
+} else {
+  message("VALIDATION SUCCESSFUL: Transaction dates checked.")
+}
 
 #Checking for shipment dates in the future
 current_date <- Sys.Date()
