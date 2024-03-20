@@ -99,7 +99,7 @@ data_frame_names <- c("categories_data", "products_data", "transactiondetails_da
    }
  }
 
- Loop through each data frame
+ #Loop through each data frame
  for (i in seq_along(data_frames)) {
    # Perform security checks on each column
    for (col in colnames(data_frames[[i]])) {
@@ -116,7 +116,7 @@ data_frame_names <- c("categories_data", "products_data", "transactiondetails_da
 
 
 
-
+#Data Integrity Checks
 #Duplicate and NA value check
 # Loop through each data frame
 for (i in seq_along(data_frames)) {
@@ -152,7 +152,6 @@ if(file.exists(categories_path) && file.exists(products_path)) {
   }
 }
 
-#Data Integrity Checks
 # Check for unique customer IDs
 if (length(unique(customers_data$customer_id)) != nrow(customers_data)) {
   stop(paste("Customer IDs are not unique."))
