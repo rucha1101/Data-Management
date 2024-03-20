@@ -39,6 +39,7 @@ jobs:
           git config --global user.email "rucha.khartadkar123@gmail.com"
           git config --global user.name "rucha1101"
           git add database.db
+          git add --all figures/
       - name: Commit files
         run: |
           git commit -m "Data Updated" || echo "No changes to commit"
