@@ -34,7 +34,7 @@ jobs:
       - name: Execute R script ins
         run: |
           Rscript R/data_load.R
-            - name: Execute R script val
+      - name: Execute R script val
         run: |
           Rscript R/visualisation.R
       - name: Add files
