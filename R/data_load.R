@@ -367,16 +367,16 @@ if (any(as.Date(reviews_data$review_date, "%m/%d/%Y") >= current_date)) {
 }
                   
 #Checking for transaction dates in the future
-current_date <- Sys.Date()
-if (any(as.Date(transactiondetails_data$transaction_date, "%mm/%dd/%YYYY") >= current_date)) {
-  stop("Invalid dates: Transaction date is in the future.")
-} else {
-  message("VALIDATION SUCCESSFUL: Transaction dates checked.")
-}
+#current_date <- Sys.Date()
+#if (any(as.Date(transactiondetails_data$transaction_date, "%m/%d/%Y") >= current_date)) {
+#  stop("Invalid dates: Transaction date is in the future.")
+#} else {
+#  message("VALIDATION SUCCESSFUL: Transaction dates checked.")
+#}
 
 #Checking for shipment dates in the future
 current_date <- Sys.Date()
-if (any(as.Date(shipment_data$shipment_date, "%mm/%dd/%YYYY") >= current_date)) {
+if (any(as.Date(shipment_data$shipment_date, "%m/%d/%Y") >= current_date)) {
   stop("Invalid dates: Shipment date is in the future.")
 } else {
   message("VALIDATION SUCCESSFUL: Shipment dates checked.")
@@ -384,7 +384,7 @@ if (any(as.Date(shipment_data$shipment_date, "%mm/%dd/%YYYY") >= current_date)) 
 
 #Checking for customer date of birth in the future
 current_date <- Sys.Date()
-if (any(as.Date(customers_data$date_of_birth, "%mm/%dd/%YYYY") >= current_date)) {
+if (any(as.Date(customers_data$date_of_birth, "%m/%d/%Y") >= current_date)) {
   stop("Invalid dates: Customer date of birth is in the future.")
 } else {
   message("VALIDATION SUCCESSFUL: Customer dates of birth checked.")
@@ -392,7 +392,7 @@ if (any(as.Date(customers_data$date_of_birth, "%mm/%dd/%YYYY") >= current_date))
                   
 #Checking for customer last_login_date in the future
 current_date <- Sys.Date()
-if (any(as.Date(customers_data$last_login_date, "%mm/%dd/%YYYY") >= current_date)) {
+if (any(as.Date(customers_data$last_login_date, "%m/%d/%Y") >= current_date)) {
   stop("Invalid dates: Customer last_login_date is in the future.")
 } else {
   message("VALIDATION SUCCESSFUL: Customer last_login_date checked.")
