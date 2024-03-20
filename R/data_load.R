@@ -15,27 +15,37 @@ library(RColorBrewer)
 
 
 
+# Load the SQLite database driver and connect to the database named 'database.db'
 my_connection <- dbConnect(RSQLite::SQLite(), "database.db")
 
+# Define a function to append data from a CSV file to a table in the database
 append_csv_to_table <- function(file_path, connection) {
+  # Extract the base name of the file from its path
   file_name <- basename(file_path)
+  # Generate the table name by converting the file name to lowercase and extracting the first part before an underscore or period
   table_name <- tolower(sub("([A-Za-z]+)[_\\.].*", "\\1", file_name))
   
+  # Read the CSV file without showing column types
   data <- read_csv(file_path, show_col_types = FALSE)
   
+  # Try to append the data to the table
   tryCatch({
+    # Check if the table exists, if not, throw an error
     if(!dbExistsTable(connection, table_name)) {
       stop(paste("Table does not exist and schema creation is required:", table_name))
     }
+    # If the table exists, append the data to it
     dbWriteTable(connection, table_name, data, append = TRUE, row.names = FALSE)
     message(paste("Successfully appended", file_name, "to the", table_name, "table."))
   }, error = function(e) {
+    # If there's an error, print a failure message
     message(paste("Failed to append", file_name, "to the", table_name, "table:", e$message))
   })
 }
 
-
+# List all CSV files in the 'data_upload' directory
 all_files <- list.files(path = "data_upload", pattern = "\\.csv$", full.names = TRUE)
+# Apply the append_csv_to_table function to each file, passing the connection as an argument
 lapply(all_files, append_csv_to_table, my_connection)
 
 
