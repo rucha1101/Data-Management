@@ -34,11 +34,21 @@ jobs:
       - name: Execute R script ins
         run: |
           Rscript R/data_load.R
+      - name: Create figures directory
+        run: |
+          mkdir -p figures
       - name: Add files
         run: |
           git config --global user.email "rucha.khartadkar123@gmail.com"
           git config --global user.name "rucha1101"
           git add database.db
+      - name: Execute R script ins
+        run: |
+          Rscript R/visualisation.R
+      - name: Add files
+        run: |
+          git config --global user.email "rucha.khartadkar123@gmail.com"
+          git config --global user.name "rucha1101"
           git add --all figures/
       - name: Commit files
         run: |

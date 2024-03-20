@@ -48,8 +48,6 @@ all_files <- list.files(path = "data_upload", pattern = "\\.csv$", full.names = 
 # Apply the append_csv_to_table function to each file, passing the connection as an argument
 lapply(all_files, append_csv_to_table, my_connection)
 
-
-
 # Count for all tables
 display_table_counts <- function(connection) {
   # Retrieve table names
@@ -95,55 +93,38 @@ data_frames <- list(categories_data, products_data, transactiondetails_data, rev
 data_frame_names <- c("categories_data", "products_data", "transactiondetails_data", "reviews_data", "suppliers_data", "customers_data", "shipment_data")
 
 
-# #Security Checks
-# # Function to check for SQL injection
-# check_sql_injection <- function(input_data) {
-#   # Define a list of forbidden SQL keywords
-#   forbidden_keywords <- c("SELECT", "INSERT", "UPDATE", "DELETE", "DROP", "ALTER", "CREATE", "TRUNCATE", "UNION", "JOIN", "FROM", "WHERE")
-#   
-#   # Check if input contains any forbidden keywords
-#   if (any(sapply(forbidden_keywords, function(x) grepl(paste0("\\b", x, "\\b"), tolower(input_data), perl = TRUE)))) {
-#     return(FALSE) # SQL injection detected
-#   } else {
-#     return(TRUE) # No SQL injection detected
-#   }
-# }
-# 
-# 
-# # Check if input contains any forbidden tags or attributes
-# check_xss_vulnerability <- function(input_data) {
-#   # Define a list of forbidden tags
-#   forbidden_tags <- c("script", "img", "link", "iframe", "audio", "video", "source", "track", "object", "embed", "param", "meta", "style", "base", "bgsound", "blink", "body", "frame", "frameset", "head", "html", "ilayer", "layer", "title", "xml")
-#   
-#   # Check if input contains any forbidden tags
-#   if (any(sapply(forbidden_tags, function(x) grepl(paste0("<", x, ">"), tolower(input_data), perl = TRUE)))) {
-#     return(FALSE) # XSS vulnerability detected
-#   } else {
-#     return(TRUE) # No XSS vulnerability detected
-#   }
-# }
+ #Security Checks
+ # Function to check for SQL injection
+ check_sql_injection <- function(input_data) {
+   # Define a list of forbidden SQL keywords
+   forbidden_keywords <- c("SELECT", "INSERT", "UPDATE", "DELETE", "DROP", "ALTER", "CREATE", "TRUNCATE", "UNION", "JOIN", "FROM", "WHERE")
 
-# Loop through each data frame
-# for (i in seq_along(data_frames)) {
-#   # Perform security checks on each column
-#   for (col in colnames(data_frames[[i]])) {
-#     # Check for SQL injection
-#     if (!all(sapply(data_frames[[i]][[col]], check_sql_injection))) {
-#       cat("SQL injection detected in column:", col, "of", data_frame_names[i], "\n")
-#     }
-#     
-#     # Check for XSS prevention
-#     if (!all(sapply(data_frames[[i]][[col]], check_xss_prevention))) {
-#       cat("XSS vulnerability detected in column:", col, "of", data_frame_names[i], "\n")
-#     }
-#   }
-# }
+   # Check if input contains any forbidden keywords
+   if (any(sapply(forbidden_keywords, function(x) grepl(paste0("\\b", x, "\\b"), tolower(input_data), perl = TRUE)))) {
+     return(FALSE) # SQL injection detected
+   } else {
+     return(TRUE) # No SQL injection detected
+   }
+ }
+
+ #Loop through each data frame
+ for (i in seq_along(data_frames)) {
+   # Perform security checks on each column
+   for (col in colnames(data_frames[[i]])) {
+     # Check for SQL injection
+     if (!all(sapply(data_frames[[i]][[col]], check_sql_injection))) {
+       cat("SQL injection detected in column:", col, "of", data_frame_names[i], "\n")
+     }
+
+   }
+}
 
 
 
 
 
 
+#Data Integrity Checks
 #Duplicate and NA value check
 # Loop through each data frame
 for (i in seq_along(data_frames)) {
@@ -179,7 +160,6 @@ if(file.exists(categories_path) && file.exists(products_path)) {
   }
 }
 
-#Data Integrity Checks
 # Check for unique customer IDs
 if (length(unique(customers_data$customer_id)) != nrow(customers_data)) {
   stop(paste("Customer IDs are not unique."))
@@ -385,6 +365,41 @@ if (any(as.Date(reviews_data$review_date, "%m/%d/%Y") >= current_date)) {
 } else {
   message("VALIDATION SUCCESSFUL: Review dates checked.")
 }
+                  
+#Checking for transaction dates in the future
+#current_date <- Sys.Date()
+#if (any(as.Date(transactiondetails_data$transaction_date, "%m/%d/%Y") >= current_date)) {
+#  stop("Invalid dates: Transaction date is in the future.")
+#} else {
+#  message("VALIDATION SUCCESSFUL: Transaction dates checked.")
+#}
+
+#Checking for shipment dates in the future
+current_date <- Sys.Date()
+if (any(as.Date(shipment_data$shipment_date, "%m/%d/%Y") >= current_date)) {
+  stop("Invalid dates: Shipment date is in the future.")
+} else {
+  message("VALIDATION SUCCESSFUL: Shipment dates checked.")
+}
+
+#Checking for customer date of birth in the future
+current_date <- Sys.Date()
+if (any(as.Date(customers_data$date_of_birth, "%m/%d/%Y") >= current_date)) {
+  stop("Invalid dates: Customer date of birth is in the future.")
+} else {
+  message("VALIDATION SUCCESSFUL: Customer dates of birth checked.")
+}   
+                  
+#Checking for customer last_login_date in the future
+current_date <- Sys.Date()
+if (any(as.Date(customers_data$last_login_date, "%m/%d/%Y") >= current_date)) {
+  stop("Invalid dates: Customer last_login_date is in the future.")
+} else {
+  message("VALIDATION SUCCESSFUL: Customer last_login_date checked.")
+}                  
+                  
+                  
+                  
 
 
 # Check if price is non-negative in product data
