@@ -206,6 +206,7 @@ filename <- paste0("figures/", plot_name, "_", date_string, ".jpg")
 
 # Save the plot as a jpg file
 ggsave(filename = filename, plot = top_10_p, device = "jpeg")
+
 ### Top 15 Products by Reviews
 
 # Create tables to join existing ones
@@ -229,7 +230,7 @@ filename <- paste0("figures/", plot_name, "_", date_string, ".jpg")
 
 # Save the plot as a jpg file
 ggsave(filename = filename, plot = top_15_pbyr, device = "jpeg")
-### Top 15 Products by Reviews
+
 
 #scale_fill_viridis_c(option = "magma")
 
@@ -268,7 +269,8 @@ filename <- paste0("figures/", plot_name, "_", date_string, ".jpg")
 
 # Save the plot as a jpg file
 ggsave(filename = filename, plot = rev_prod_day, device = "jpeg")
-### Top 15 Products by Reviews
+
+
 # This represents the number of products purchased, revenue and average revenue per day by product
 
 details<-tran_prod%>%
@@ -311,6 +313,7 @@ filename <- paste0("figures/", plot_name, "_", date_string, ".jpg")
 
 # Save the plot as a jpg file
 ggsave(filename = filename, plot = ship_by_date, device = "jpeg")
+
 ### Most purchased categories by gender
 
 combo<- left_join(x=tran_prod,y=customers, by = join_by(customer_id == customer_id))
