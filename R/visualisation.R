@@ -43,8 +43,10 @@ ggplot(transactions, aes(x = payment_category, fill = payment_method, y = total_
   )
 
 ### Top 10 Products with Highest Average Discounts
+message("error in next line")
+# tran_prod <- left_join(x=transactions, y=products, by=join_by(product_id == product_id))
+tran_prod<- merge(transactions,products, by = "product_id", all.x=TRUE, all.y = FALSE)
 
-tran_prod <- left_join(x=transactions, y=products, by=join_by(product_id == product_id))
 
 high_discount_products <- transactions %>%
   left_join(products, by = "product_id") %>% 
@@ -89,7 +91,9 @@ ggplot(top_10_cities, aes(x = shipment_city, y = shipments, fill = shipment_city
 
 ### Sales Performance by State
 
-tran_ship <- left_join(x=transactions, y=shipment, by=join_by(transaction_id == transaction_id))
+#tran_ship <- left_join(x=transactions, y=shipment, by=join_by(transaction_id == transaction_id))
+
+tran_ship<- merge(x=transactions,y=shipment, by = "transaction_id", all.x=TRUE, all.y = FALSE)
 
 ### Analyzing performance by shipment state
 
