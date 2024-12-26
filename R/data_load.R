@@ -3,15 +3,16 @@ library(readr)
 library(RSQLite)
 library(ggplot2)
 library(sqldf)
-#library(tidyverse)
-#library(tidytext)
-#library(gridExtra)
 library(dplyr)
 library(RColorBrewer)
 #install.packages("gganimate")
 #library(gganimate)
 #install.packages('transformr')
-#library(transformr)
+#library(transformer)
+#library(tidyverse)
+#library(tidytext)
+#library(gridExtra)
+
 
 
 
